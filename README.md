@@ -261,7 +261,7 @@ See [CIS source notes](docs/CIS_SOURCES.md) and [source audit notes](docs/SOURCE
 ### Windows
 
 ```powershell
-git clone <repository-url>
+git clone https://github.com/zakhar-git/QueryForge.git
 cd QueryForge
 
 python -m venv .venv
@@ -276,7 +276,7 @@ python main.py
 ### Linux and macOS
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/zakhar-git/QueryForge.git
 cd QueryForge
 
 python3 -m venv .venv
