@@ -1,0 +1,120 @@
+id: hash
+label_en: File hash
+label_ru: Хеш файла
+example_en: 64-character SHA-256
+example_ru: SHA-256 из 64 символов
+category: technical
+recommended_sources:
+- virustotal
+- malwarebazaar
+- otx
+- google
+queries:
+- source: google
+  level: basic
+  title_en: Exact hash
+  title_ru: Точный хеш
+  query: '"{hash}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact hash
+  title_ru: Точный хеш
+  query: '"{hash}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact hash
+  title_ru: Точный хеш
+  query: '"{hash}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact hash
+  title_ru: Точный хеш
+  query: '"{hash}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact hash
+  title_ru: Точный хеш
+  query: '"{hash}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact hash
+  title_ru: Точный хеш
+  query: '"{hash}"'
+  category: general
+- source: virustotal
+  level: basic
+  title_en: VirusTotal
+  title_ru: VirusTotal
+  query: '{hash}'
+  category: technical
+- source: malwarebazaar
+  level: basic
+  title_en: MalwareBazaar
+  title_ru: MalwareBazaar
+  query: '{hash_type}:{hash}'
+  category: technical
+- source: otx
+  level: basic
+  title_en: AlienVault OTX
+  title_ru: AlienVault OTX
+  query: '{hash}'
+  category: technical
+- source: google
+  level: extended
+  title_en: Reports and analyses
+  title_ru: Отчёты и анализы
+  query: '"{hash}" (report OR analysis OR sample)'
+  category: documents
+- source: github
+  level: extended
+  title_en: Code mentions
+  title_ru: Упоминания в коде
+  query: '"{hash}"'
+  category: code
+- source: reddit
+  level: full
+  title_en: Reddit mentions
+  title_ru: Упоминания на Reddit
+  query: '"{hash}"'
+  category: social
+- source: urlscan
+  level: full
+  title_en: urlscan mentions
+  title_ru: Упоминания в urlscan
+  query: hash:{hash}
+  category: technical
+- source: urlhaus
+  level: extended
+  title_en: URLhaus hash search
+  title_ru: Поиск хеша в URLhaus
+  query: '{hash}'
+  category: technical
+- source: threatfox
+  level: extended
+  title_en: ThreatFox hash indicator
+  title_ru: Индикатор хеша в ThreatFox
+  query: ioc:{hash}
+  category: technical
+- source: pulsedive
+  level: extended
+  title_en: Pulsedive hash indicator
+  title_ru: Индикатор хеша в Pulsedive
+  query: '{hash}'
+  category: technical
+- source: qwant
+  level: full
+  title_en: Hash mentions in Qwant
+  title_ru: Упоминания хеша в Qwant
+  query: '"{hash}"'
+  category: general
+- source: mojeek
+  level: full
+  title_en: Hash mentions in Mojeek
+  title_ru: Упоминания хеша в Mojeek
+  query: '"{hash}"'
+  category: general

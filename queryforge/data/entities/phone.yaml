@@ -1,0 +1,216 @@
+id: phone
+label_en: Phone number
+label_ru: Номер телефона
+example_en: +1 202 555 0174
+example_ru: +7 999 123-45-67
+category: identity
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- yandex
+queries:
+- source: google
+  level: basic
+  title_en: Exact phone number
+  title_ru: Точный номер телефона
+  query: '"{phone}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact phone number
+  title_ru: Точный номер телефона
+  query: '"{phone}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact phone number
+  title_ru: Точный номер телефона
+  query: '"{phone}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact phone number
+  title_ru: Точный номер телефона
+  query: '"{phone}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact phone number
+  title_ru: Точный номер телефона
+  query: '"{phone}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact phone number
+  title_ru: Точный номер телефона
+  query: '"{phone}"'
+  category: general
+- source: google
+  level: basic
+  title_en: International digits
+  title_ru: Международный формат
+  query: '"{phone_plus}"'
+  category: identity
+- source: google
+  level: extended
+  title_en: Digits only
+  title_ru: Только цифры
+  query: '"{phone_digits}"'
+  category: identity
+- source: google
+  level: extended
+  title_en: Contact pages
+  title_ru: Контактные страницы
+  query: '"{phone}" ("contact" OR "phone" OR "call")'
+  category: identity
+- source: google
+  level: full
+  title_en: Public documents
+  title_ru: Публичные документы
+  query: '"{phone}" (filetype:pdf OR filetype:docx OR filetype:xlsx)'
+  category: documents
+- source: reddit
+  level: extended
+  title_en: Reddit mentions
+  title_ru: Упоминания на Reddit
+  query: '"{phone}"'
+  category: social
+- source: github
+  level: full
+  title_en: Public code mentions
+  title_ru: Упоминания в публичном коде
+  query: '"{phone}"'
+  category: code
+- source: google
+  level: full
+  title_en: Telegram pages
+  title_ru: Страницы Telegram
+  query: '"{phone}" site:t.me'
+  category: social
+- source: yandex
+  level: basic
+  title_en: Exact international number
+  title_ru: Точный номер в международном формате
+  query: '"{phone_plus}"'
+  category: contacts
+- source: yandex
+  level: extended
+  title_en: Digits-only number
+  title_ru: Номер без разделителей
+  query: '"{phone_digits}"'
+  category: contacts
+- source: vk
+  level: extended
+  title_en: VK mentions
+  title_ru: Упоминания во ВКонтакте
+  query: '"{phone_plus}"'
+  category: social
+- source: tgstat
+  level: extended
+  title_en: Telegram publication mentions
+  title_ru: Упоминания в Telegram
+  query: '"{phone_plus}"'
+  category: social
+- source: habr
+  level: full
+  title_en: Habr mentions
+  title_ru: Упоминания на Хабре
+  query: '"{phone_plus}"'
+  category: social
+- source: pikabu
+  level: full
+  title_en: Pikabu mentions
+  title_ru: Упоминания на Пикабу
+  query: '"{phone_plus}"'
+  category: social
+- source: yandex_maps
+  level: basic
+  title_en: Organizations by phone
+  title_ru: Организации по номеру телефона
+  query: '{phone_plus}'
+  category: maps
+- source: two_gis
+  level: basic
+  title_en: Directory search by phone
+  title_ru: Поиск по телефону в справочнике
+  query: '{phone_plus}'
+  category: maps
+- source: rusprofile
+  level: extended
+  title_en: Russian company contact records
+  title_ru: Контакты российских компаний
+  query: '{phone_plus}'
+  category: records
+- source: checko
+  level: extended
+  title_en: Russian counterparty contacts
+  title_ru: Контакты российских контрагентов
+  query: '{phone_plus}'
+  category: records
+- source: youcontrol
+  level: full
+  title_en: Ukrainian company contacts
+  title_ru: Контакты украинских компаний
+  query: '{phone_plus}'
+  category: records
+- source: adata_kz
+  level: full
+  title_en: Kazakhstan company contacts
+  title_ru: Контакты компаний Казахстана
+  query: '{phone_plus}'
+  category: records
+- source: orginfo_uz
+  level: full
+  title_en: Uzbekistan company contacts
+  title_ru: Контакты компаний Узбекистана
+  query: '{phone_plus}'
+  category: records
+- source: qwant
+  level: extended
+  title_en: Phone number in Qwant
+  title_ru: Номер телефона в Qwant
+  query: '"{phone_plus}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Phone number in Mojeek
+  title_ru: Номер телефона в Mojeek
+  query: '"{phone_plus}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Phone number in Ecosia
+  title_ru: Номер телефона в Ecosia
+  query: '"{phone_plus}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Phone number in Yahoo
+  title_ru: Номер телефона в Yahoo
+  query: '"{phone_plus}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Phone on VK and Odnoklassniki
+  title_ru: Телефон во ВКонтакте и Одноклассниках
+  query: '"{phone_plus}" (site:vk.com | site:ok.ru)'
+  category: social
+- source: yandex
+  level: full
+  title_en: Phone in documents
+  title_ru: Телефон в документах
+  query: '"{phone_plus}" mime:pdf'
+  category: documents
+- source: arquivo_pt
+  level: full
+  title_en: Archived phone mentions
+  title_ru: Архивные упоминания телефона
+  query: '"{phone_plus}"'
+  category: archives
+- source: rambler
+  level: extended
+  title_en: Phone number in Rambler
+  title_ru: Номер телефона в Rambler
+  query: '"{phone_plus}"'
+  category: general

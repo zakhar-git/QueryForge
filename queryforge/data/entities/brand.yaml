@@ -1,0 +1,322 @@
+id: brand
+label_en: Brand or product
+label_ru: Бренд или продукт
+example_en: Example Mobile
+example_ru: Пример Мобайл
+category: organization
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- google_images
+- reddit
+- youtube
+- yandex
+- yandex_news
+queries:
+- source: google
+  level: basic
+  title_en: Exact brand name
+  title_ru: Точное название бренда
+  query: '"{brand}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact brand name
+  title_ru: Точное название бренда
+  query: '"{brand}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact brand name
+  title_ru: Точное название бренда
+  query: '"{brand}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact brand name
+  title_ru: Точное название бренда
+  query: '"{brand}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact brand name
+  title_ru: Точное название бренда
+  query: '"{brand}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact brand name
+  title_ru: Точное название бренда
+  query: '"{brand}"'
+  category: general
+- source: google
+  level: basic
+  title_en: Official pages
+  title_ru: Официальные страницы
+  query: '"{brand}" (official OR brand)'
+  category: organization
+- source: google
+  level: basic
+  title_en: Social profiles
+  title_ru: Профили в соцсетях
+  query: '"{brand}" (site:instagram.com OR site:x.com OR site:tiktok.com OR site:youtube.com)'
+  category: social
+- source: google
+  level: extended
+  title_en: Domains and stores
+  title_ru: Домены и магазины
+  query: '"{brand}" (shop OR store OR domain)'
+  category: organization
+- source: google
+  level: extended
+  title_en: Mobile applications
+  title_ru: Мобильные приложения
+  query: '"{brand}" (site:play.google.com OR site:apps.apple.com)'
+  category: organization
+- source: google
+  level: full
+  title_en: Trademark references
+  title_ru: Упоминания товарного знака
+  query: '"{brand}" (trademark OR "trade mark")'
+  category: records
+- source: reddit
+  level: extended
+  title_en: Reddit discussions
+  title_ru: Обсуждения на Reddit
+  query: '"{brand}"'
+  category: social
+- source: youtube
+  level: extended
+  title_en: YouTube mentions
+  title_ru: Упоминания на YouTube
+  query: '"{brand}"'
+  category: social
+- source: github
+  level: full
+  title_en: Code mentions
+  title_ru: Упоминания в коде
+  query: '"{brand}"'
+  category: code
+- source: google_images
+  level: basic
+  title_en: Logo and visual identity
+  title_ru: Логотип и фирменный стиль
+  query: '"{brand}" logo'
+  category: images
+- source: bing_images
+  level: extended
+  title_en: Brand images
+  title_ru: Изображения бренда
+  query: '"{brand}"'
+  category: images
+- source: vk
+  level: basic
+  title_en: VK communities and mentions
+  title_ru: Сообщества и упоминания во ВКонтакте
+  query: '"{brand}"'
+  category: social
+- source: tgstat
+  level: extended
+  title_en: Telegram mentions
+  title_ru: Упоминания в Telegram
+  query: '"{brand}"'
+  category: social
+- source: rutube
+  level: extended
+  title_en: RUTUBE mentions
+  title_ru: Упоминания на RUTUBE
+  query: '"{brand}"'
+  category: social
+- source: habr
+  level: full
+  title_en: Habr mentions
+  title_ru: Упоминания на Хабре
+  query: '"{brand}"'
+  category: social
+- source: pikabu
+  level: extended
+  title_en: Pikabu discussions
+  title_ru: Обсуждения на Пикабу
+  query: '"{brand}"'
+  category: social
+- source: yandex_maps
+  level: basic
+  title_en: Locations and representatives
+  title_ru: Точки и представительства
+  query: '{brand}'
+  category: maps
+- source: two_gis
+  level: basic
+  title_en: Local branches and contacts
+  title_ru: Филиалы и контакты
+  query: '{brand}'
+  category: maps
+- source: yandex
+  level: extended
+  title_en: Russian-language reviews
+  title_ru: Отзывы на русском языке
+  query: '"{brand}" (отзывы | обзор | жалобы | опыт)'
+  category: references
+- source: yandex
+  level: extended
+  title_en: Distributors and representatives
+  title_ru: Дистрибьюторы и представители
+  query: '"{brand}" (дистрибьютор | дилер | представитель)'
+  category: organization
+- source: yandex
+  level: full
+  title_en: Franchise and partners
+  title_ru: Франшиза и партнёры
+  query: '"{brand}" (франшиза | партнёр | поставщик)'
+  category: organization
+- source: google
+  level: full
+  title_en: CIS social discussions
+  title_ru: Обсуждения в соцсетях СНГ
+  query: '"{brand}" (site:vk.com OR site:t.me OR site:pikabu.ru)'
+  category: social
+- source: qwant
+  level: extended
+  title_en: Brand name in Qwant
+  title_ru: Название бренда в Qwant
+  query: '"{brand}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Brand name in Mojeek
+  title_ru: Название бренда в Mojeek
+  query: '"{brand}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Brand name in Ecosia
+  title_ru: Название бренда в Ecosia
+  query: '"{brand}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Brand name in Yahoo
+  title_ru: Название бренда в Yahoo
+  query: '"{brand}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Brand name in Yandex
+  title_ru: Бренд в Яндексе
+  query: '"{brand}"'
+  category: organizations
+- source: yandex
+  level: extended
+  title_en: Russian-language reviews
+  title_ru: Русскоязычные отзывы
+  query: '"{brand}" (отзывы | обзор | жалоба)'
+  category: reputation
+- source: yandex_news
+  level: basic
+  title_en: Yandex News coverage
+  title_ru: Упоминания в Яндекс Новостях
+  query: '"{brand}"'
+  category: news
+- source: google_news
+  level: extended
+  title_en: Google News coverage
+  title_ru: Упоминания в Google News
+  query: '"{brand}"'
+  category: news
+- source: bing_news
+  level: extended
+  title_en: Bing News coverage
+  title_ru: Упоминания в Bing News
+  query: '"{brand}"'
+  category: news
+- source: gdelt
+  level: full
+  title_en: Global media coverage
+  title_ru: Мировые публикации СМИ
+  query: '"{brand}"'
+  category: news
+- source: linkedin
+  level: full
+  title_en: LinkedIn brand mentions
+  title_ru: Упоминания бренда в LinkedIn
+  query: '"{brand}"'
+  category: social
+- source: facebook
+  level: full
+  title_en: Facebook brand pages
+  title_ru: Страницы бренда в Facebook
+  query: '"{brand}"'
+  category: social
+- source: bluesky
+  level: full
+  title_en: Bluesky brand mentions
+  title_ru: Упоминания бренда в Bluesky
+  query: '"{brand}"'
+  category: social
+- source: tiktok
+  level: full
+  title_en: TikTok brand mentions
+  title_ru: Упоминания бренда в TikTok
+  query: '"{brand}"'
+  category: social
+- source: pinterest
+  level: full
+  title_en: Pinterest brand media
+  title_ru: Материалы бренда в Pinterest
+  query: '"{brand}"'
+  category: images
+- source: google_patents
+  level: full
+  title_en: Brand patents
+  title_ru: Патенты бренда
+  query: '"{brand}"'
+  category: documents
+- source: arquivo_pt
+  level: full
+  title_en: Archived brand mentions
+  title_ru: Архивные упоминания бренда
+  query: '"{brand}"'
+  category: archives
+- source: wikimedia_commons
+  level: full
+  title_en: Brand media in Wikimedia Commons
+  title_ru: Медиа бренда в Wikimedia Commons
+  query: '"{brand}"'
+  category: images
+- source: crates
+  level: full
+  title_en: Brand in Rust packages
+  title_ru: Бренд в пакетах Rust
+  query: '"{brand}"'
+  category: packages
+- source: rubygems
+  level: full
+  title_en: Brand in Ruby packages
+  title_ru: Бренд в пакетах Ruby
+  query: '"{brand}"'
+  category: packages
+- source: packagist
+  level: full
+  title_en: Brand in PHP packages
+  title_ru: Бренд в пакетах PHP
+  query: '"{brand}"'
+  category: packages
+- source: maven_central
+  level: full
+  title_en: Brand in Java packages
+  title_ru: Бренд в пакетах Java
+  query: '"{brand}"'
+  category: packages
+- source: rambler
+  level: extended
+  title_en: Brand in Rambler
+  title_ru: Бренд в Rambler
+  query: '"{brand}"'
+  category: general
+- source: yandex_video
+  level: full
+  title_en: Brand in Yandex Video
+  title_ru: Бренд в Яндекс Видео
+  query: '"{brand}"'
+  category: social

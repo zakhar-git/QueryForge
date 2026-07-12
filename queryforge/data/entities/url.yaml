@@ -1,0 +1,198 @@
+id: url
+label_en: URL
+label_ru: URL-адрес
+example_en: https://example.com/about
+example_ru: https://example.com/about
+category: content
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- wayback
+- urlscan
+- virustotal
+- yandex
+- arquivo_pt
+queries:
+- source: google
+  level: basic
+  title_en: Exact URL
+  title_ru: Точный URL
+  query: '"{url}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact URL
+  title_ru: Точный URL
+  query: '"{url}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact URL
+  title_ru: Точный URL
+  query: '"{url}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact URL
+  title_ru: Точный URL
+  query: '"{url}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact URL
+  title_ru: Точный URL
+  query: '"{url}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact URL
+  title_ru: Точный URL
+  query: '"{url}"'
+  category: general
+- source: google
+  level: basic
+  title_en: References outside the host
+  title_ru: Упоминания вне сайта
+  query: '"{url}" -site:{domain}'
+  category: references
+- source: github
+  level: extended
+  title_en: Code references
+  title_ru: Упоминания в коде
+  query: '"{url}"'
+  category: code
+- source: reddit
+  level: extended
+  title_en: Reddit references
+  title_ru: Упоминания на Reddit
+  query: '"{url}"'
+  category: social
+- source: wayback
+  level: basic
+  title_en: Archived versions
+  title_ru: Архивные версии
+  query: '{url}'
+  category: archives
+  url: https://web.archive.org/web/*/{url}
+- source: archive_today
+  level: extended
+  title_en: Archive.today snapshots
+  title_ru: Снимки Archive.today
+  query: '{url}'
+  category: archives
+  url: https://archive.ph/{url_path_encoded}
+- source: urlscan
+  level: basic
+  title_en: urlscan results
+  title_ru: Результаты urlscan
+  query: page.url:"{url}"
+  category: technical
+- source: virustotal
+  level: extended
+  title_en: VirusTotal URL
+  title_ru: URL в VirusTotal
+  query: '{url}'
+  category: technical
+- source: google_images
+  level: full
+  title_en: Images referencing URL
+  title_ru: Изображения по URL
+  query: '"{url}"'
+  category: images
+- source: tgstat
+  level: extended
+  title_en: Telegram publication references
+  title_ru: Упоминания в Telegram
+  query: '"{url}"'
+  category: references
+- source: vk
+  level: extended
+  title_en: VK references
+  title_ru: Упоминания во ВКонтакте
+  query: '"{url}"'
+  category: references
+- source: habr
+  level: full
+  title_en: Habr references
+  title_ru: Упоминания на Хабре
+  query: '"{url}"'
+  category: references
+- source: pikabu
+  level: full
+  title_en: Pikabu references
+  title_ru: Упоминания на Пикабу
+  query: '"{url}"'
+  category: references
+- source: rutube
+  level: full
+  title_en: RUTUBE references
+  title_ru: Упоминания на RUTUBE
+  query: '"{url}"'
+  category: references
+- source: qwant
+  level: extended
+  title_en: Exact URL in Qwant
+  title_ru: Точный URL в Qwant
+  query: '"{url}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Exact URL in Mojeek
+  title_ru: Точный URL в Mojeek
+  query: '"{url}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Exact URL in Ecosia
+  title_ru: Точный URL в Ecosia
+  query: '"{url}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Exact URL in Yahoo
+  title_ru: Точный URL в Yahoo
+  query: '"{url}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Exact URL in Yandex
+  title_ru: Точный URL в Яндексе
+  query: '"{url}"'
+  category: web
+- source: yandex
+  level: extended
+  title_en: URL operator search
+  title_ru: Поиск оператором URL
+  query: url:"{url}"
+  category: web
+- source: yandex_news
+  level: full
+  title_en: URL mentions in news
+  title_ru: Упоминания URL в новостях
+  query: '"{url}"'
+  category: news
+- source: arquivo_pt
+  level: basic
+  title_en: URL history in Arquivo.pt
+  title_ru: История URL в Arquivo.pt
+  query: '{url}'
+  category: archives
+- source: urlhaus
+  level: extended
+  title_en: URLhaus URL search
+  title_ru: Поиск URL в URLhaus
+  query: '{url}'
+  category: technical
+- source: pulsedive
+  level: extended
+  title_en: Pulsedive URL indicator
+  title_ru: Индикатор URL в Pulsedive
+  query: '{url}'
+  category: technical
+- source: rambler
+  level: extended
+  title_en: Exact URL in Rambler
+  title_ru: Точный URL в Rambler
+  query: '"{url}"'
+  category: general

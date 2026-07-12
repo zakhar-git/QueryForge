@@ -1,0 +1,126 @@
+id: image
+label_en: Image URL or filename
+label_ru: URL или имя изображения
+example_en: https://example.com/avatar.jpg
+example_ru: https://example.com/avatar.jpg
+category: content
+recommended_sources:
+- google_images
+- bing_images
+- yandex_images
+- google
+- wayback
+- yandex
+- google_lens
+queries:
+- source: google
+  level: basic
+  title_en: Exact image URL or filename
+  title_ru: Точный URL или имя изображения
+  query: '"{image}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact image URL or filename
+  title_ru: Точный URL или имя изображения
+  query: '"{image}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact image URL or filename
+  title_ru: Точный URL или имя изображения
+  query: '"{image}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact image URL or filename
+  title_ru: Точный URL или имя изображения
+  query: '"{image}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact image URL or filename
+  title_ru: Точный URL или имя изображения
+  query: '"{image}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact image URL or filename
+  title_ru: Точный URL или имя изображения
+  query: '"{image}"'
+  category: general
+- source: google_images
+  level: basic
+  title_en: Google Images
+  title_ru: Google Картинки
+  query: '"{image}"'
+  category: images
+- source: bing_images
+  level: basic
+  title_en: Bing Images
+  title_ru: Bing Images
+  query: '"{image}"'
+  category: images
+- source: yandex_images
+  level: extended
+  title_en: Yandex Images
+  title_ru: Яндекс Картинки
+  query: '"{image}"'
+  category: images
+- source: google
+  level: extended
+  title_en: Pages embedding the URL
+  title_ru: Страницы с этим URL
+  query: '"{url}"'
+  category: references
+- source: github
+  level: full
+  title_en: Code references
+  title_ru: Упоминания в коде
+  query: '"{image}"'
+  category: code
+- source: wayback
+  level: extended
+  title_en: Archived image URL
+  title_ru: Изображение в архиве
+  query: '{url}'
+  category: archives
+  url: https://web.archive.org/web/*/{url}
+- source: archive_today
+  level: full
+  title_en: Archive.today
+  title_ru: Archive.today
+  query: '{url}'
+  category: archives
+  url: https://archive.ph/{url_path_encoded}
+- source: wikimedia_commons
+  level: extended
+  title_en: Wikimedia Commons media search
+  title_ru: Поиск медиа в Wikimedia Commons
+  query: '"{image}"'
+  category: images
+- source: flickr
+  level: extended
+  title_en: Flickr image search
+  title_ru: Поиск изображения во Flickr
+  query: '"{image}"'
+  category: images
+- source: pinterest
+  level: full
+  title_en: Pinterest image search
+  title_ru: Поиск изображения в Pinterest
+  query: '"{image}"'
+  category: images
+- source: google_lens
+  level: basic
+  title_en: Google Lens search by image URL
+  title_ru: Поиск Google Lens по URL изображения
+  query: '{image}'
+  category: images
+  url: https://lens.google.com/uploadbyurl?url={url_path_encoded}
+- source: arquivo_pt
+  level: full
+  title_en: Archived image URL
+  title_ru: Архивный URL изображения
+  query: '{image}'
+  category: archives

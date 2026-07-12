@@ -1,0 +1,395 @@
+id: username
+label_en: Username
+label_ru: Имя пользователя
+example_en: shadow_fox
+example_ru: shadow_fox
+category: identity
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- github
+- reddit
+- google_images
+- yandex
+queries:
+- source: google
+  level: basic
+  title_en: Exact username
+  title_ru: Точный ник
+  query: '"{username}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact username
+  title_ru: Точный ник
+  query: '"{username}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact username
+  title_ru: Точный ник
+  query: '"{username}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact username
+  title_ru: Точный ник
+  query: '"{username}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact username
+  title_ru: Точный ник
+  query: '"{username}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact username
+  title_ru: Точный ник
+  query: '"{username}"'
+  category: general
+- source: google
+  level: basic
+  title_en: Profiles
+  title_ru: Профили
+  query: '"{username}" (inurl:profile OR inurl:user OR inurl:users)'
+  category: identity
+- source: google
+  level: basic
+  title_en: Social platforms
+  title_ru: Социальные платформы
+  query: '"{username}" (site:reddit.com OR site:github.com OR site:t.me OR site:medium.com)'
+  category: social
+- source: google_images
+  level: basic
+  title_en: Images and avatars
+  title_ru: Изображения и аватары
+  query: '"{username}"'
+  category: images
+- source: bing_images
+  level: extended
+  title_en: Images and avatars
+  title_ru: Изображения и аватары
+  query: '"{username}"'
+  category: images
+- source: yandex_images
+  level: full
+  title_en: Images and avatars
+  title_ru: Изображения и аватары
+  query: '"{username}"'
+  category: images
+- source: github
+  level: basic
+  title_en: Code mentions
+  title_ru: Упоминания в коде
+  query: '"{username}"'
+  category: code
+- source: github
+  level: extended
+  title_en: User search
+  title_ru: Поиск пользователя
+  query: '{username}'
+  category: identity
+  url: https://github.com/search?q={username_q}&type=users
+- source: gitlab
+  level: extended
+  title_en: GitLab mentions
+  title_ru: Упоминания в GitLab
+  query: '"{username}"'
+  category: code
+- source: sourcegraph
+  level: full
+  title_en: Public code index
+  title_ru: Публичный индекс кода
+  query: context:global "{username}"
+  category: code
+- source: reddit
+  level: basic
+  title_en: Reddit mentions
+  title_ru: Упоминания на Reddit
+  query: '"{username}"'
+  category: social
+- source: youtube
+  level: extended
+  title_en: Video mentions
+  title_ru: Упоминания в видео
+  query: '"{username}"'
+  category: social
+- source: medium
+  level: extended
+  title_en: Article mentions
+  title_ru: Упоминания в статьях
+  query: '"{username}"'
+  category: social
+- source: stackoverflow
+  level: full
+  title_en: Developer mentions
+  title_ru: Упоминания разработчика
+  query: '"{username}"'
+  category: social
+- source: google
+  level: extended
+  title_en: Contact clues
+  title_ru: Контактные данные
+  query: '"{username}" ("email" OR "contact" OR "telegram" OR "discord")'
+  category: identity
+- source: google
+  level: full
+  title_en: Public documents
+  title_ru: Публичные документы
+  query: '"{username}" (filetype:pdf OR filetype:docx OR filetype:xlsx)'
+  category: documents
+- source: wayback
+  level: full
+  title_en: Archived paths
+  title_ru: Архивные пути
+  query: '*/*{username}*'
+  category: archives
+  url: https://web.archive.org/web/*/*{username}*
+- source: internet_archive
+  level: full
+  title_en: Internet Archive items
+  title_ru: Материалы Internet Archive
+  query: '"{username}"'
+  category: archives
+- source: vk
+  level: basic
+  title_en: VK profile and mentions
+  title_ru: Профиль и упоминания во ВКонтакте
+  query: '"{username}"'
+  category: social
+- source: ok
+  level: extended
+  title_en: Odnoklassniki profiles
+  title_ru: Профили в Одноклассниках
+  query: '{username}'
+  category: social
+- source: tgstat
+  level: basic
+  title_en: Telegram publication mentions
+  title_ru: Упоминания в публикациях Telegram
+  query: '"{username}"'
+  category: social
+- source: habr
+  level: extended
+  title_en: Habr mentions
+  title_ru: Упоминания на Хабре
+  query: '"{username}"'
+  category: social
+- source: pikabu
+  level: extended
+  title_en: Pikabu mentions
+  title_ru: Упоминания на Пикабу
+  query: '"{username}"'
+  category: social
+- source: rutube
+  level: full
+  title_en: RUTUBE mentions
+  title_ru: Упоминания на RUTUBE
+  query: '"{username}"'
+  category: social
+- source: yandex
+  level: extended
+  title_en: VK pages indexed by Yandex
+  title_ru: Страницы ВКонтакте в Яндексе
+  query: site:vk.com "{username}"
+  category: social
+- source: yandex
+  level: extended
+  title_en: Telegram pages indexed by Yandex
+  title_ru: Страницы Telegram в Яндексе
+  query: site:t.me "{username}"
+  category: social
+- source: yandex
+  level: full
+  title_en: Odnoklassniki pages indexed by Yandex
+  title_ru: Страницы Одноклассников в Яндексе
+  query: site:ok.ru "{username}"
+  category: social
+- source: yandex
+  level: full
+  title_en: Developer communities in Russian
+  title_ru: Русскоязычные сообщества разработчиков
+  query: '"{username}" (site:habr.com | site:gitflic.ru | site:codeforces.com)'
+  category: code
+- source: google
+  level: extended
+  title_en: CIS social profile sweep
+  title_ru: Поиск по соцсетям СНГ
+  query: '"{username}" (site:vk.com OR site:ok.ru OR site:t.me)'
+  category: social
+- source: google
+  level: full
+  title_en: Russian-language identity clues
+  title_ru: Русскоязычные признаки профиля
+  query: '"{username}" ("обо мне" OR "контакты" OR "мой канал" OR "мой сайт")'
+  category: identity
+- source: qwant
+  level: extended
+  title_en: Exact username in Qwant
+  title_ru: Точный ник в Qwant
+  query: '"{username}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Exact username in Mojeek
+  title_ru: Точный ник в Mojeek
+  query: '"{username}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Exact username in Ecosia
+  title_ru: Точный ник в Ecosia
+  query: '"{username}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Exact username in Yahoo
+  title_ru: Точный ник в Yahoo
+  query: '"{username}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Exact username in Yandex
+  title_ru: Точный ник в Яндексе
+  query: '"{username}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Russian-language profile pages
+  title_ru: Русскоязычные страницы профилей
+  query: '"{username}" lang:ru'
+  category: identity
+- source: yandex
+  level: full
+  title_en: Username in PDF files
+  title_ru: Ник в PDF-файлах
+  query: '"{username}" mime:pdf'
+  category: documents
+- source: yandex_news
+  level: full
+  title_en: Username in news
+  title_ru: Ник в новостях
+  query: '"{username}"'
+  category: news
+- source: codeberg
+  level: extended
+  title_en: Codeberg repositories
+  title_ru: Репозитории Codeberg
+  query: '"{username}"'
+  category: code
+- source: gitflic
+  level: extended
+  title_en: GitFlic repositories
+  title_ru: Репозитории GitFlic
+  query: '"{username}"'
+  category: code
+- source: bitbucket
+  level: full
+  title_en: Bitbucket repositories
+  title_ru: Репозитории Bitbucket
+  query: '{username}'
+  category: code
+- source: bluesky
+  level: extended
+  title_en: Bluesky profiles and posts
+  title_ru: Профили и публикации Bluesky
+  query: '"{username}"'
+  category: social
+- source: tiktok
+  level: extended
+  title_en: TikTok profiles and videos
+  title_ru: Профили и видео TikTok
+  query: '{username}'
+  category: social
+- source: twitch
+  level: extended
+  title_en: Twitch users and channels
+  title_ru: Пользователи и каналы Twitch
+  query: '{username}'
+  category: social
+- source: flickr
+  level: full
+  title_en: Flickr accounts and photos
+  title_ru: Аккаунты и фотографии Flickr
+  query: '"{username}"'
+  category: images
+- source: soundcloud
+  level: full
+  title_en: SoundCloud accounts and tracks
+  title_ru: Аккаунты и треки SoundCloud
+  query: '"{username}"'
+  category: social
+- source: pinterest
+  level: full
+  title_en: Pinterest accounts and pins
+  title_ru: Аккаунты и публикации Pinterest
+  query: '"{username}"'
+  category: images
+- source: linkedin
+  level: full
+  title_en: LinkedIn profile search
+  title_ru: Поиск профиля LinkedIn
+  query: '"{username}"'
+  category: identity
+- source: facebook
+  level: full
+  title_en: Facebook profile search
+  title_ru: Поиск профиля Facebook
+  query: '"{username}"'
+  category: identity
+- source: keybase
+  level: extended
+  title_en: Keybase profile
+  title_ru: Профиль Keybase
+  query: '{username}'
+  category: identity
+- source: steam
+  level: full
+  title_en: Steam Community users
+  title_ru: Пользователи Steam Community
+  query: '{username}'
+  category: social
+- source: arquivo_pt
+  level: full
+  title_en: Archived username mentions
+  title_ru: Архивные упоминания ника
+  query: '"{username}"'
+  category: archives
+- source: crates
+  level: full
+  title_en: Username in Rust packages
+  title_ru: Ник в пакетах Rust
+  query: '"{username}"'
+  category: packages
+- source: rubygems
+  level: full
+  title_en: Username in Ruby packages
+  title_ru: Ник в пакетах Ruby
+  query: '"{username}"'
+  category: packages
+- source: packagist
+  level: full
+  title_en: Username in PHP packages
+  title_ru: Ник в пакетах PHP
+  query: '"{username}"'
+  category: packages
+- source: maven_central
+  level: full
+  title_en: Username in Java packages
+  title_ru: Ник в пакетах Java
+  query: '"{username}"'
+  category: packages
+- source: rambler
+  level: extended
+  title_en: Exact username in Rambler
+  title_ru: Точный ник в Rambler
+  query: '"{username}"'
+  category: general
+- source: yandex_video
+  level: full
+  title_en: Username in Yandex Video
+  title_ru: Ник в Яндекс Видео
+  query: '"{username}"'
+  category: social

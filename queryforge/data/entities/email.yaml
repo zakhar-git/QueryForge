@@ -1,0 +1,244 @@
+id: email
+label_en: Email address
+label_ru: Email-адрес
+example_en: analyst@example.com
+example_ru: analyst@example.com
+category: identity
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- github
+- gravatar
+- yandex
+queries:
+- source: google
+  level: basic
+  title_en: Exact email
+  title_ru: Точный email
+  query: '"{email}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact email
+  title_ru: Точный email
+  query: '"{email}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact email
+  title_ru: Точный email
+  query: '"{email}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact email
+  title_ru: Точный email
+  query: '"{email}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact email
+  title_ru: Точный email
+  query: '"{email}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact email
+  title_ru: Точный email
+  query: '"{email}"'
+  category: general
+- source: google
+  level: basic
+  title_en: Local part and domain
+  title_ru: Локальная часть и домен
+  query: '"{local}" "{domain}"'
+  category: identity
+- source: google
+  level: extended
+  title_en: Public documents
+  title_ru: Публичные документы
+  query: '"{email}" (filetype:pdf OR filetype:docx OR filetype:xlsx OR filetype:csv)'
+  category: documents
+- source: google
+  level: extended
+  title_en: Profile pages
+  title_ru: Страницы профилей
+  query: '"{email}" (inurl:profile OR inurl:author OR inurl:member)'
+  category: identity
+- source: github
+  level: basic
+  title_en: Code and commit mentions
+  title_ru: Код и данные коммитов
+  query: '"{email}"'
+  category: code
+- source: gitlab
+  level: extended
+  title_en: GitLab mentions
+  title_ru: Упоминания в GitLab
+  query: '"{email}"'
+  category: code
+- source: sourcegraph
+  level: full
+  title_en: Public code index
+  title_ru: Публичный индекс кода
+  query: context:global "{email}"
+  category: code
+- source: reddit
+  level: extended
+  title_en: Reddit mentions
+  title_ru: Упоминания на Reddit
+  query: '"{email}"'
+  category: social
+- source: gravatar
+  level: basic
+  title_en: Gravatar profile
+  title_ru: Профиль Gravatar
+  query: '{email}'
+  category: identity
+  url: https://www.gravatar.com/avatar/{email_md5}?d=404&s=256
+- source: google
+  level: full
+  title_en: Local part reuse
+  title_ru: Повторное использование имени
+  query: '"{local}" -"{email}"'
+  category: identity
+- source: wayback
+  level: full
+  title_en: Archived domain pages
+  title_ru: Архив домена
+  query: '{domain}/*'
+  category: archives
+  url: https://web.archive.org/web/*/{domain}/*
+- source: vk
+  level: extended
+  title_en: VK mentions
+  title_ru: Упоминания во ВКонтакте
+  query: '"{email}"'
+  category: social
+- source: tgstat
+  level: extended
+  title_en: Telegram publication mentions
+  title_ru: Упоминания в Telegram
+  query: '"{email}"'
+  category: social
+- source: habr
+  level: extended
+  title_en: Habr mentions
+  title_ru: Упоминания на Хабре
+  query: '"{email}"'
+  category: social
+- source: pikabu
+  level: full
+  title_en: Pikabu mentions
+  title_ru: Упоминания на Пикабу
+  query: '"{email}"'
+  category: social
+- source: rusprofile
+  level: full
+  title_en: Russian company contact records
+  title_ru: Контакты российских компаний
+  query: '{email}'
+  category: records
+- source: checko
+  level: full
+  title_en: Russian counterparty contacts
+  title_ru: Контакты российских контрагентов
+  query: '{email}'
+  category: records
+- source: youcontrol
+  level: full
+  title_en: Ukrainian company contacts
+  title_ru: Контакты украинских компаний
+  query: '{email}'
+  category: records
+- source: orginfo_uz
+  level: full
+  title_en: Uzbekistan company contacts
+  title_ru: Контакты компаний Узбекистана
+  query: '{email}'
+  category: records
+- source: yandex
+  level: extended
+  title_en: CIS domain references
+  title_ru: Упоминания на сайтах СНГ
+  query: '"{email}" (domain:ru | domain:by | domain:kz | domain:uz | domain:ua)'
+  category: references
+- source: qwant
+  level: extended
+  title_en: Exact email in Qwant
+  title_ru: Точный email в Qwant
+  query: '"{email}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Exact email in Mojeek
+  title_ru: Точный email в Mojeek
+  query: '"{email}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Exact email in Ecosia
+  title_ru: Точный email в Ecosia
+  query: '"{email}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Exact email in Yahoo
+  title_ru: Точный email в Yahoo
+  query: '"{email}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Exact email in Yandex
+  title_ru: Точный email в Яндексе
+  query: '"{email}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Email local part and domain
+  title_ru: Имя ящика и домен
+  query: '"{local}" "{domain}"'
+  category: identity
+- source: yandex
+  level: full
+  title_en: Email in PDF files
+  title_ru: Email в PDF-файлах
+  query: '"{email}" mime:pdf'
+  category: documents
+- source: yandex
+  level: full
+  title_en: Russian-language email mentions
+  title_ru: Русскоязычные упоминания email
+  query: '"{email}" lang:ru'
+  category: identity
+- source: codeberg
+  level: extended
+  title_en: Email in Codeberg
+  title_ru: Email в Codeberg
+  query: '"{email}"'
+  category: code
+- source: gitflic
+  level: extended
+  title_en: Email in GitFlic
+  title_ru: Email в GitFlic
+  query: '"{email}"'
+  category: code
+- source: bitbucket
+  level: full
+  title_en: Email in Bitbucket repositories
+  title_ru: Email в репозиториях Bitbucket
+  query: '"{email}"'
+  category: code
+- source: arquivo_pt
+  level: full
+  title_en: Archived email mentions
+  title_ru: Архивные упоминания email
+  query: '"{email}"'
+  category: archives
+- source: rambler
+  level: extended
+  title_en: Exact email in Rambler
+  title_ru: Точный email в Rambler
+  query: '"{email}"'
+  category: general

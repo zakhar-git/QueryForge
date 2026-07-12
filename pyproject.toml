@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "queryforge-osint"
+version = "0.4.0"
+description = "Interactive OSINT search query builder"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "rich>=13.7,<15",
+  "PyYAML>=6.0,<7"
+]
+
+[tool.setuptools.packages.find]
+include = ["queryforge*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.package-data]
+queryforge = ["data/*.yaml", "data/*.html", "data/entities/*.yaml"]

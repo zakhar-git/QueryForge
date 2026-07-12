@@ -1,0 +1,155 @@
+id: github_repo
+label_en: GitHub repository
+label_ru: Репозиторий GitHub
+example_en: octocat/Hello-World
+example_ru: octocat/Hello-World
+category: code
+recommended_sources:
+- github
+- google
+- sourcegraph
+- reddit
+- yandex
+- codeberg
+- gitflic
+queries:
+- source: github
+  level: basic
+  title_en: Repository
+  title_ru: Репозиторий
+  query: '{repo}'
+  category: code
+  url: https://github.com/{repo}
+- source: github
+  level: basic
+  title_en: Repository mentions
+  title_ru: Упоминания репозитория
+  query: '"{repo}"'
+  category: code
+- source: google
+  level: basic
+  title_en: Web mentions
+  title_ru: Упоминания в интернете
+  query: '"github.com/{repo}"'
+  category: references
+- source: bing
+  level: basic
+  title_en: Web mentions
+  title_ru: Упоминания в интернете
+  query: '"{repo}" github'
+  category: references
+- source: duckduckgo
+  level: extended
+  title_en: Web mentions
+  title_ru: Упоминания в интернете
+  query: '"{repo}" github'
+  category: references
+- source: sourcegraph
+  level: basic
+  title_en: Sourcegraph repository
+  title_ru: Репозиторий в Sourcegraph
+  query: repo:^github\.com/{repo}$
+  category: code
+- source: gitlab
+  level: extended
+  title_en: Mirrors and mentions
+  title_ru: Зеркала и упоминания
+  query: '"{repo}"'
+  category: code
+- source: reddit
+  level: extended
+  title_en: Reddit discussions
+  title_ru: Обсуждения на Reddit
+  query: '"{repo}"'
+  category: social
+- source: stackoverflow
+  level: extended
+  title_en: Stack Overflow mentions
+  title_ru: Упоминания на Stack Overflow
+  query: '"{repo}"'
+  category: social
+- source: npm
+  level: full
+  title_en: npm packages
+  title_ru: Пакеты npm
+  query: '"{repo_name}"'
+  category: registries
+- source: pypi
+  level: full
+  title_en: PyPI packages
+  title_ru: Пакеты PyPI
+  query: '"{repo_name}"'
+  category: registries
+- source: dockerhub
+  level: full
+  title_en: Docker images
+  title_ru: Образы Docker
+  query: '"{repo_name}"'
+  category: registries
+- source: huggingface
+  level: full
+  title_en: Hugging Face references
+  title_ru: Упоминания в Hugging Face
+  query: '"{repo}"'
+  category: registries
+- source: wayback
+  level: full
+  title_en: Archived repository
+  title_ru: Репозиторий в архиве
+  query: github.com/{repo}
+  category: archives
+  url: https://web.archive.org/web/*/https://github.com/{repo}
+- source: yandex
+  level: extended
+  title_en: Repository mentions in Yandex
+  title_ru: Упоминания репозитория в Яндексе
+  query: '"{repo}"'
+  category: code
+- source: yandex
+  level: full
+  title_en: Repository mirrors in CIS code hosting
+  title_ru: Зеркала репозитория в хостингах СНГ
+  query: '"{repo_name}" (site:gitflic.ru | site:codeberg.org)'
+  category: code
+- source: codeberg
+  level: extended
+  title_en: Codeberg repository search
+  title_ru: Поиск репозитория в Codeberg
+  query: '{repo_name}'
+  category: code
+- source: gitflic
+  level: extended
+  title_en: GitFlic repository search
+  title_ru: Поиск репозитория в GitFlic
+  query: '{repo_name}'
+  category: code
+- source: bitbucket
+  level: extended
+  title_en: Bitbucket repository search
+  title_ru: Поиск репозитория в Bitbucket
+  query: '{repo_name}'
+  category: code
+- source: crates
+  level: full
+  title_en: Rust package mentions
+  title_ru: Упоминания пакета Rust
+  query: '{repo_name}'
+  category: packages
+- source: rubygems
+  level: full
+  title_en: Ruby package mentions
+  title_ru: Упоминания пакета Ruby
+  query: '{repo_name}'
+  category: packages
+- source: packagist
+  level: full
+  title_en: PHP package mentions
+  title_ru: Упоминания пакета PHP
+  query: '{repo_name}'
+  category: packages
+- source: maven_central
+  level: full
+  title_en: Java package mentions
+  title_ru: Упоминания пакета Java
+  query: '{repo_name}'
+  category: packages

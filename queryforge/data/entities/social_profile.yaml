@@ -1,0 +1,190 @@
+id: social_profile
+label_en: Social profile URL
+label_ru: URL профиля в соцсети
+example_en: https://social.example/@name
+example_ru: https://social.example/@name
+category: social
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- google_images
+- wayback
+- yandex
+queries:
+- source: google
+  level: basic
+  title_en: Exact profile URL
+  title_ru: Точный URL профиля
+  query: '"{url}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact profile URL
+  title_ru: Точный URL профиля
+  query: '"{url}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact profile URL
+  title_ru: Точный URL профиля
+  query: '"{url}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact profile URL
+  title_ru: Точный URL профиля
+  query: '"{url}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact profile URL
+  title_ru: Точный URL профиля
+  query: '"{url}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact profile URL
+  title_ru: Точный URL профиля
+  query: '"{url}"'
+  category: general
+- source: google
+  level: basic
+  title_en: Mentions outside the platform
+  title_ru: Упоминания вне платформы
+  query: '"{url}" -site:{domain}'
+  category: references
+- source: google
+  level: extended
+  title_en: Username reuse
+  title_ru: Повторное использование имени
+  query: '"{username}" -site:{domain}'
+  category: identity
+- source: google_images
+  level: basic
+  title_en: Profile images
+  title_ru: Изображения профиля
+  query: '"{url}"'
+  category: images
+- source: bing_images
+  level: extended
+  title_en: Profile images
+  title_ru: Изображения профиля
+  query: '"{url}"'
+  category: images
+- source: reddit
+  level: extended
+  title_en: Reddit references
+  title_ru: Упоминания на Reddit
+  query: '"{url}"'
+  category: social
+- source: github
+  level: full
+  title_en: Code references
+  title_ru: Упоминания в коде
+  query: '"{url}"'
+  category: code
+- source: wayback
+  level: basic
+  title_en: Archived profile
+  title_ru: Профиль в архиве
+  query: '{url}'
+  category: archives
+  url: https://web.archive.org/web/*/{url}
+- source: archive_today
+  level: full
+  title_en: Archive.today
+  title_ru: Archive.today
+  query: '{url}'
+  category: archives
+  url: https://archive.ph/{url_path_encoded}
+- source: vk
+  level: extended
+  title_en: VK references
+  title_ru: Упоминания во ВКонтакте
+  query: '"{url}"'
+  category: social
+- source: tgstat
+  level: extended
+  title_en: Telegram references
+  title_ru: Упоминания в Telegram
+  query: '"{url}"'
+  category: social
+- source: habr
+  level: full
+  title_en: Habr references
+  title_ru: Упоминания на Хабре
+  query: '"{url}"'
+  category: social
+- source: pikabu
+  level: full
+  title_en: Pikabu references
+  title_ru: Упоминания на Пикабу
+  query: '"{url}"'
+  category: social
+- source: rutube
+  level: full
+  title_en: RUTUBE references
+  title_ru: Упоминания на RUTUBE
+  query: '"{url}"'
+  category: social
+- source: qwant
+  level: extended
+  title_en: Profile URL in Qwant
+  title_ru: URL профиля в Qwant
+  query: '"{url}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Profile URL in Mojeek
+  title_ru: URL профиля в Mojeek
+  query: '"{url}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Profile URL in Ecosia
+  title_ru: URL профиля в Ecosia
+  query: '"{url}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Profile URL in Yahoo
+  title_ru: URL профиля в Yahoo
+  query: '"{url}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Exact profile URL in Yandex
+  title_ru: Точный URL профиля в Яндексе
+  query: '"{url}"'
+  category: social
+- source: yandex
+  level: extended
+  title_en: Profile username in Yandex
+  title_ru: Имя профиля в Яндексе
+  query: '"{username}"'
+  category: identity
+- source: arquivo_pt
+  level: basic
+  title_en: Profile history in Arquivo.pt
+  title_ru: История профиля в Arquivo.pt
+  query: '{url}'
+  category: archives
+- source: bluesky
+  level: full
+  title_en: Profile URL on Bluesky
+  title_ru: URL профиля в Bluesky
+  query: '"{url}"'
+  category: social
+- source: linkedin
+  level: full
+  title_en: Profile URL on LinkedIn
+  title_ru: URL профиля в LinkedIn
+  query: '"{url}"'
+  category: social
+- source: facebook
+  level: full
+  title_en: Profile URL on Facebook
+  title_ru: URL профиля в Facebook
+  query: '"{url}"'
+  category: social

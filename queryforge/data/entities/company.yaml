@@ -1,0 +1,484 @@
+id: company
+label_en: Company or organization
+label_ru: Компания или организация
+example_en: Example Labs
+example_ru: ООО Пример
+category: organization
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- opencorporates
+- opensanctions
+- wikidata
+- yandex
+- yandex_news
+queries:
+- source: google
+  level: basic
+  title_en: Exact company name
+  title_ru: Точное название компании
+  query: '"{company}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact company name
+  title_ru: Точное название компании
+  query: '"{company}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact company name
+  title_ru: Точное название компании
+  query: '"{company}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact company name
+  title_ru: Точное название компании
+  query: '"{company}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact company name
+  title_ru: Точное название компании
+  query: '"{company}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact company name
+  title_ru: Точное название компании
+  query: '"{company}"'
+  category: general
+- source: google
+  level: basic
+  title_en: Official website
+  title_ru: Официальный сайт
+  query: '"{company}" (official OR company)'
+  category: organization
+- source: google
+  level: basic
+  title_en: Professional pages
+  title_ru: Профессиональные страницы
+  query: '"{company}" (site:linkedin.com/company OR site:crunchbase.com)'
+  category: organization
+- source: opencorporates
+  level: basic
+  title_en: Company records
+  title_ru: Записи о компаниях
+  query: '"{company}"'
+  category: records
+- source: opensanctions
+  level: basic
+  title_en: Sanctions records
+  title_ru: Санкционные записи
+  query: '"{company}"'
+  category: records
+- source: wikidata
+  level: basic
+  title_en: Wikidata entities
+  title_ru: Сущности Wikidata
+  query: '"{company}"'
+  category: records
+- source: google
+  level: extended
+  title_en: Annual reports
+  title_ru: Годовые отчёты
+  query: '"{company}" ("annual report" OR "financial statements") filetype:pdf'
+  category: documents
+- source: google
+  level: extended
+  title_en: Leadership and team
+  title_ru: Руководство и команда
+  query: '"{company}" (CEO OR founder OR director OR team)'
+  category: organization
+- source: google
+  level: extended
+  title_en: Jobs and hiring
+  title_ru: Вакансии и найм
+  query: '"{company}" (jobs OR careers OR hiring)'
+  category: organization
+- source: google
+  level: full
+  title_en: Contracts and tenders
+  title_ru: Контракты и тендеры
+  query: '"{company}" (contract OR tender OR procurement)'
+  category: records
+- source: github
+  level: extended
+  title_en: GitHub organization mentions
+  title_ru: Упоминания в GitHub
+  query: '"{company}"'
+  category: code
+- source: reddit
+  level: extended
+  title_en: Reddit discussions
+  title_ru: Обсуждения на Reddit
+  query: '"{company}"'
+  category: social
+- source: youtube
+  level: full
+  title_en: Video mentions
+  title_ru: Упоминания в видео
+  query: '"{company}"'
+  category: social
+- source: google_images
+  level: extended
+  title_en: Logos and offices
+  title_ru: Логотипы и офисы
+  query: '"{company}"'
+  category: images
+- source: internet_archive
+  level: full
+  title_en: Internet Archive items
+  title_ru: Материалы Internet Archive
+  query: '"{company}"'
+  category: archives
+- source: rusprofile
+  level: basic
+  title_en: Russian company profile
+  title_ru: Профиль российской компании
+  query: '{company}'
+  category: records
+- source: checko
+  level: basic
+  title_en: Russian counterparty profile
+  title_ru: Проверка российского контрагента
+  query: '{company}'
+  category: records
+- source: egrul_nalog
+  level: basic
+  title_en: Official Russian company registry
+  title_ru: Официальный реестр ЕГРЮЛ и ЕГРИП
+  query: '{company}'
+  category: records
+- source: zakupki_ru
+  level: extended
+  title_en: Russian public procurement
+  title_ru: Государственные закупки России
+  query: '{company}'
+  category: records
+- source: youcontrol
+  level: basic
+  title_en: Ukrainian company profile
+  title_ru: Профиль украинской компании
+  query: '{company}'
+  category: records
+- source: opendatabot
+  level: extended
+  title_en: Ukrainian public company data
+  title_ru: Открытые данные компаний Украины
+  query: '{company}'
+  category: records
+- source: adata_kz
+  level: basic
+  title_en: Kazakhstan counterparty profile
+  title_ru: Проверка контрагента Казахстана
+  query: '{company}'
+  category: records
+- source: kgd_kz
+  level: extended
+  title_en: Kazakhstan taxpayer registry
+  title_ru: Реестр налогоплательщиков Казахстана
+  query: '{company}'
+  category: records
+- source: orginfo_uz
+  level: basic
+  title_en: Uzbekistan company profile
+  title_ru: Профиль компании Узбекистана
+  query: '{company}'
+  category: records
+- source: egr_by
+  level: basic
+  title_en: Belarus company registry
+  title_ru: Реестр компаний Беларуси
+  query: '{company}'
+  category: records
+- source: yandex_maps
+  level: basic
+  title_en: Offices and branches
+  title_ru: Офисы и филиалы
+  query: '{company}'
+  category: maps
+- source: two_gis
+  level: basic
+  title_en: Company directory and locations
+  title_ru: Компания в справочнике и на карте
+  query: '{company}'
+  category: maps
+- source: vk
+  level: extended
+  title_en: VK communities and mentions
+  title_ru: Сообщества и упоминания во ВКонтакте
+  query: '"{company}"'
+  category: social
+- source: tgstat
+  level: extended
+  title_en: Telegram publication mentions
+  title_ru: Упоминания в Telegram
+  query: '"{company}"'
+  category: social
+- source: habr
+  level: full
+  title_en: Technology community mentions
+  title_ru: Упоминания в технологическом сообществе
+  query: '"{company}"'
+  category: social
+- source: pikabu
+  level: full
+  title_en: Public discussions
+  title_ru: Публичные обсуждения
+  query: '"{company}"'
+  category: social
+- source: rutube
+  level: full
+  title_en: Video mentions
+  title_ru: Упоминания в видео
+  query: '"{company}"'
+  category: social
+- source: yandex
+  level: basic
+  title_en: Legal identifiers
+  title_ru: Юридические идентификаторы
+  query: '"{company}" (ИНН | ОГРН | БИН | УНП | ЄДРПОУ)'
+  category: records
+- source: yandex
+  level: extended
+  title_en: Corporate roles
+  title_ru: Руководство и учредители
+  query: '"{company}" (директор | учредитель | владелец | бенефициар)'
+  category: organization
+- source: yandex
+  level: extended
+  title_en: Tenders and government contracts
+  title_ru: Тендеры и государственные контракты
+  query: '"{company}" (тендер | закупка | госконтракт | поставщик)'
+  category: records
+- source: yandex
+  level: full
+  title_en: Legal and financial documents
+  title_ru: Юридические и финансовые документы
+  query: '"{company}" (устав | отчётность | лицензия | решение) mime:pdf'
+  category: documents
+- source: yandex
+  level: full
+  title_en: CIS country domains
+  title_ru: Сайты стран СНГ
+  query: '"{company}" (domain:ru | domain:by | domain:kz | domain:uz | domain:ua)'
+  category: references
+- source: google
+  level: extended
+  title_en: Cyrillic legal forms
+  title_ru: Организационно-правовые формы
+  query: '"{company}" (ООО OR АО OR ИП OR ТОО OR ТОВ OR МЧЖ OR УП)'
+  category: records
+- source: qwant
+  level: extended
+  title_en: Company name in Qwant
+  title_ru: Название компании в Qwant
+  query: '"{company}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Company name in Mojeek
+  title_ru: Название компании в Mojeek
+  query: '"{company}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Company name in Ecosia
+  title_ru: Название компании в Ecosia
+  query: '"{company}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Company name in Yahoo
+  title_ru: Название компании в Yahoo
+  query: '"{company}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Company name in Yandex
+  title_ru: Компания в Яндексе
+  query: '"{company}"'
+  category: organizations
+- source: yandex
+  level: extended
+  title_en: Company details in Russian
+  title_ru: Реквизиты компании
+  query: '"{company}" (ИНН | ОГРН | БИН | УНП | ЕДРПОУ)'
+  category: organizations
+- source: yandex
+  level: extended
+  title_en: Company PDF documents
+  title_ru: PDF-документы компании
+  query: '"{company}" mime:pdf'
+  category: documents
+- source: yandex
+  level: full
+  title_en: Company procurement mentions
+  title_ru: Упоминания компании в закупках
+  query: '"{company}" (тендер | закупка | контракт | поставщик)'
+  category: organizations
+- source: google_news
+  level: basic
+  title_en: Google News coverage
+  title_ru: Публикации в Google News
+  query: '"{company}"'
+  category: news
+- source: bing_news
+  level: extended
+  title_en: Bing News coverage
+  title_ru: Публикации в Bing News
+  query: '"{company}"'
+  category: news
+- source: yandex_news
+  level: basic
+  title_en: Yandex News coverage
+  title_ru: Публикации в Яндекс Новостях
+  query: '"{company}"'
+  category: news
+- source: gdelt
+  level: full
+  title_en: Global media coverage
+  title_ru: Мировые публикации СМИ
+  query: '"{company}"'
+  category: news
+- source: linkedin
+  level: extended
+  title_en: LinkedIn company search
+  title_ru: Поиск компании в LinkedIn
+  query: '"{company}"'
+  category: organizations
+- source: facebook
+  level: full
+  title_en: Facebook company pages
+  title_ru: Страницы компании в Facebook
+  query: '"{company}"'
+  category: social
+- source: bluesky
+  level: full
+  title_en: Bluesky company mentions
+  title_ru: Упоминания компании в Bluesky
+  query: '"{company}"'
+  category: social
+- source: companies_house
+  level: extended
+  title_en: UK company records
+  title_ru: Реестр компаний Великобритании
+  query: '{company}'
+  category: organizations
+- source: sec_edgar
+  level: extended
+  title_en: SEC filings and companies
+  title_ru: Компании и отчётность SEC
+  query: '{company}'
+  category: organizations
+- source: gleif
+  level: extended
+  title_en: LEI records
+  title_ru: Записи LEI
+  query: '{company}'
+  category: organizations
+- source: e_register_am
+  level: extended
+  title_en: Armenia company register
+  title_ru: Реестр компаний Армении
+  query: '{company}'
+  category: organizations
+- source: minjust_kg
+  level: extended
+  title_en: Kyrgyzstan company register
+  title_ru: Реестр компаний Кыргызстана
+  query: '{company}'
+  category: organizations
+- source: georgia_registry
+  level: extended
+  title_en: Georgia company register
+  title_ru: Реестр компаний Грузии
+  query: '{company}'
+  category: organizations
+- source: srl_md
+  level: extended
+  title_en: Moldova company search
+  title_ru: Поиск компаний Молдовы
+  query: '{company}'
+  category: organizations
+- source: ror
+  level: full
+  title_en: Research organization records
+  title_ru: Реестр научных организаций
+  query: '"{company}"'
+  category: organizations
+- source: google_patents
+  level: full
+  title_en: Patents assigned to company
+  title_ru: Патенты компании
+  query: '"{company}"'
+  category: documents
+- source: codeberg
+  level: full
+  title_en: Codeberg organization mentions
+  title_ru: Упоминания организации в Codeberg
+  query: '"{company}"'
+  category: code
+- source: gitflic
+  level: full
+  title_en: GitFlic organization mentions
+  title_ru: Упоминания организации в GitFlic
+  query: '"{company}"'
+  category: code
+- source: bitbucket
+  level: full
+  title_en: Bitbucket organization repositories
+  title_ru: Репозитории организации в Bitbucket
+  query: '{company}'
+  category: code
+- source: arquivo_pt
+  level: full
+  title_en: Archived company mentions
+  title_ru: Архивные упоминания компании
+  query: '"{company}"'
+  category: archives
+- source: bing_maps
+  level: full
+  title_en: Company locations in Bing Maps
+  title_ru: Адреса компании в Bing Maps
+  query: '"{company}"'
+  category: maps
+- source: crates
+  level: full
+  title_en: Company in Rust packages
+  title_ru: Компания в пакетах Rust
+  query: '"{company}"'
+  category: packages
+- source: rubygems
+  level: full
+  title_en: Company in Ruby packages
+  title_ru: Компания в пакетах Ruby
+  query: '"{company}"'
+  category: packages
+- source: packagist
+  level: full
+  title_en: Company in PHP packages
+  title_ru: Компания в пакетах PHP
+  query: '"{company}"'
+  category: packages
+- source: maven_central
+  level: full
+  title_en: Company in Java packages
+  title_ru: Компания в пакетах Java
+  query: '"{company}"'
+  category: packages
+- source: rambler
+  level: extended
+  title_en: Company in Rambler
+  title_ru: Компания в Rambler
+  query: '"{company}"'
+  category: general
+- source: yandex_video
+  level: full
+  title_en: Company in Yandex Video
+  title_ru: Компания в Яндекс Видео
+  query: '"{company}"'
+  category: social

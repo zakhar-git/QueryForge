@@ -1,0 +1,72 @@
+entity: username
+queries:
+  - source: google
+    level: basic
+    title: Exact username
+    category: identity
+    query: '"{username}"'
+  - source: google
+    level: basic
+    title: Username in profile pages
+    category: social
+    query: '"{username}" (inurl:profile OR inurl:user OR inurl:users)'
+  - source: google
+    level: advanced
+    title: Username with contact clues
+    category: identity
+    query: '"{username}" ("email" OR "contact" OR "telegram" OR "discord")'
+  - source: google
+    level: deep
+    title: Username in public documents
+    category: documents
+    query: '"{username}" (filetype:pdf OR filetype:docx OR filetype:xlsx)'
+  - source: bing
+    level: basic
+    title: Exact username
+    category: identity
+    query: '"{username}"'
+  - source: bing
+    level: advanced
+    title: Username in page title
+    category: identity
+    query: 'intitle:"{username}"'
+  - source: duckduckgo
+    level: basic
+    title: Exact username
+    category: identity
+    query: '"{username}"'
+  - source: duckduckgo
+    level: advanced
+    title: Username on social platforms
+    category: social
+    query: '"{username}" (site:reddit.com OR site:github.com OR site:medium.com)'
+  - source: github
+    level: basic
+    title: Username mention in code
+    category: code
+    query: '"{username}"'
+  - source: github
+    level: advanced
+    title: Username in configuration files
+    category: code
+    query: '"{username}" (path:config OR path:.github OR path:docs)'
+  - source: github
+    level: deep
+    title: Username near identity fields
+    category: identity
+    query: '"{username}" ("author" OR "maintainer" OR "contact")'
+  - source: reddit
+    level: basic
+    title: Username mentions
+    category: social
+    query: '"{username}"'
+  - source: reddit
+    level: advanced
+    title: Username with identity clues
+    category: social
+    query: '"{username}" ("my github" OR "my website" OR "contact me")'
+  - source: wayback
+    level: advanced
+    title: Archived URL containing username
+    category: archive
+    query: 'https://web.archive.org/web/*/*{username}*'

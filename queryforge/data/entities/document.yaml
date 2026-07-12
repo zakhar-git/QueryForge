@@ -1,0 +1,211 @@
+id: document
+label_en: Document title or filename
+label_ru: Название или имя документа
+example_en: annual-report-2025.pdf
+example_ru: annual-report-2025.pdf
+category: content
+recommended_sources:
+- google
+- bing
+- github
+- internet_archive
+- yandex
+queries:
+- source: google
+  level: basic
+  title_en: Exact document name
+  title_ru: Точное имя документа
+  query: '"{document}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact document name
+  title_ru: Точное имя документа
+  query: '"{document}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact document name
+  title_ru: Точное имя документа
+  query: '"{document}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact document name
+  title_ru: Точное имя документа
+  query: '"{document}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact document name
+  title_ru: Точное имя документа
+  query: '"{document}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact document name
+  title_ru: Точное имя документа
+  query: '"{document}"'
+  category: general
+- source: google
+  level: basic
+  title_en: PDF files
+  title_ru: PDF-файлы
+  query: '"{document}" filetype:pdf'
+  category: documents
+- source: google
+  level: extended
+  title_en: Office documents
+  title_ru: Документы Office
+  query: '"{document}" (filetype:doc OR filetype:docx OR filetype:xls OR filetype:xlsx OR filetype:ppt OR filetype:pptx)'
+  category: documents
+- source: bing
+  level: extended
+  title_en: Document references
+  title_ru: Упоминания документа
+  query: '"{document}"'
+  category: documents
+- source: github
+  level: basic
+  title_en: Repository files
+  title_ru: Файлы в репозиториях
+  query: '"{document}"'
+  category: code
+- source: gitlab
+  level: extended
+  title_en: GitLab files
+  title_ru: Файлы в GitLab
+  query: '"{document}"'
+  category: code
+- source: internet_archive
+  level: basic
+  title_en: Internet Archive
+  title_ru: Internet Archive
+  query: '"{document}"'
+  category: archives
+- source: google_scholar
+  level: full
+  title_en: Academic references
+  title_ru: Научные ссылки
+  query: '"{document}"'
+  category: research
+- source: crossref
+  level: full
+  title_en: Publication metadata
+  title_ru: Метаданные публикаций
+  query: '"{document}"'
+  category: research
+- source: yandex
+  level: extended
+  title_en: Russian document context
+  title_ru: Русскоязычный контекст документа
+  query: '"{document}" (документ | отчёт | приказ | протокол | приложение)'
+  category: documents
+- source: vk
+  level: full
+  title_en: VK document references
+  title_ru: Упоминания документа во ВКонтакте
+  query: '"{document}"'
+  category: social
+- source: tgstat
+  level: extended
+  title_en: Telegram document references
+  title_ru: Упоминания документа в Telegram
+  query: '"{document}"'
+  category: social
+- source: habr
+  level: full
+  title_en: Habr document references
+  title_ru: Упоминания документа на Хабре
+  query: '"{document}"'
+  category: content
+- source: pikabu
+  level: full
+  title_en: Pikabu document references
+  title_ru: Упоминания документа на Пикабу
+  query: '"{document}"'
+  category: content
+- source: qwant
+  level: extended
+  title_en: Document title or filename in Qwant
+  title_ru: Название или имя файла документа в Qwant
+  query: '"{document}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Document title or filename in Mojeek
+  title_ru: Название или имя файла документа в Mojeek
+  query: '"{document}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Document title or filename in Ecosia
+  title_ru: Название или имя файла документа в Ecosia
+  query: '"{document}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Document title or filename in Yahoo
+  title_ru: Название или имя файла документа в Yahoo
+  query: '"{document}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Exact document name in Yandex
+  title_ru: Точное имя документа в Яндексе
+  query: '"{document}"'
+  category: documents
+- source: yandex
+  level: extended
+  title_en: PDF document search
+  title_ru: Поиск PDF-документа
+  query: '"{document}" mime:pdf'
+  category: documents
+- source: yandex
+  level: extended
+  title_en: Russian-language document search
+  title_ru: Поиск русскоязычного документа
+  query: '"{document}" lang:ru'
+  category: documents
+- source: pubmed
+  level: full
+  title_en: PubMed publication search
+  title_ru: Поиск публикации в PubMed
+  query: '"{document}"'
+  category: publications
+- source: arxiv
+  level: full
+  title_en: arXiv publication search
+  title_ru: Поиск публикации в arXiv
+  query: '"{document}"'
+  category: publications
+- source: semantic_scholar
+  level: full
+  title_en: Semantic Scholar search
+  title_ru: Поиск в Semantic Scholar
+  query: '"{document}"'
+  category: publications
+- source: worldcat
+  level: full
+  title_en: WorldCat catalog search
+  title_ru: Поиск в каталоге WorldCat
+  query: '"{document}"'
+  category: publications
+- source: google_patents
+  level: full
+  title_en: Patent document search
+  title_ru: Поиск патентного документа
+  query: '"{document}"'
+  category: documents
+- source: arquivo_pt
+  level: full
+  title_en: Archived document mentions
+  title_ru: Архивные упоминания документа
+  query: '"{document}"'
+  category: archives
+- source: rambler
+  level: extended
+  title_en: Document in Rambler
+  title_ru: Документ в Rambler
+  query: '"{document}"'
+  category: general

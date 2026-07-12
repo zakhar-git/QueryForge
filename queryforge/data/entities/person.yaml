@@ -1,0 +1,418 @@
+id: person
+label_en: Person or full name
+label_ru: Человек или полное имя
+example_en: Jane Alexandra Doe
+example_ru: Иван Иванов
+category: identity
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- google_images
+- orcid
+- wikidata
+- yandex
+- yandex_news
+queries:
+- source: google
+  level: basic
+  title_en: Exact full name
+  title_ru: Точное полное имя
+  query: '"{name}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact full name
+  title_ru: Точное полное имя
+  query: '"{name}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact full name
+  title_ru: Точное полное имя
+  query: '"{name}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact full name
+  title_ru: Точное полное имя
+  query: '"{name}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact full name
+  title_ru: Точное полное имя
+  query: '"{name}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact full name
+  title_ru: Точное полное имя
+  query: '"{name}"'
+  category: general
+- source: google
+  level: basic
+  title_en: Professional profiles
+  title_ru: Профессиональные профили
+  query: '"{name}" (site:linkedin.com/in OR site:github.com OR site:orcid.org)'
+  category: career
+- source: google
+  level: basic
+  title_en: Public documents
+  title_ru: Публичные документы
+  query: '"{name}" (filetype:pdf OR filetype:docx OR filetype:pptx)'
+  category: documents
+- source: google_images
+  level: basic
+  title_en: Images
+  title_ru: Изображения
+  query: '"{name}"'
+  category: images
+- source: bing_images
+  level: extended
+  title_en: Images
+  title_ru: Изображения
+  query: '"{name}"'
+  category: images
+- source: yandex_images
+  level: full
+  title_en: Images
+  title_ru: Изображения
+  query: '"{name}"'
+  category: images
+- source: orcid
+  level: basic
+  title_en: ORCID records
+  title_ru: Записи ORCID
+  query: '"{name}"'
+  category: research
+- source: google_scholar
+  level: extended
+  title_en: Academic publications
+  title_ru: Научные публикации
+  query: author:"{name}"
+  category: research
+- source: crossref
+  level: extended
+  title_en: Publication metadata
+  title_ru: Метаданные публикаций
+  query: '"{name}"'
+  category: research
+- source: openalex
+  level: full
+  title_en: OpenAlex works
+  title_ru: Работы OpenAlex
+  query: '"{name}"'
+  category: research
+- source: opensanctions
+  level: extended
+  title_en: Sanctions and PEP data
+  title_ru: Санкционные и PEP-данные
+  query: '"{name}"'
+  category: records
+- source: wikidata
+  level: basic
+  title_en: Wikidata entities
+  title_ru: Сущности Wikidata
+  query: '"{name}"'
+  category: records
+- source: opencorporates
+  level: extended
+  title_en: Company officer mentions
+  title_ru: Упоминания в компаниях
+  query: '"{name}"'
+  category: records
+- source: github
+  level: extended
+  title_en: Code mentions
+  title_ru: Упоминания в коде
+  query: '"{name}"'
+  category: code
+- source: reddit
+  level: extended
+  title_en: Reddit mentions
+  title_ru: Упоминания на Reddit
+  query: '"{name}"'
+  category: social
+- source: youtube
+  level: full
+  title_en: Video appearances
+  title_ru: Упоминания в видео
+  query: '"{name}"'
+  category: social
+- source: google
+  level: full
+  title_en: Biography and speaker pages
+  title_ru: Биографии и выступления
+  query: '"{name}" ("biography" OR "speaker" OR "author" OR "team")'
+  category: identity
+- source: vk
+  level: basic
+  title_en: VK people and mentions
+  title_ru: Люди и упоминания во ВКонтакте
+  query: '"{name}"'
+  category: social
+- source: ok
+  level: basic
+  title_en: Odnoklassniki people
+  title_ru: Поиск людей в Одноклассниках
+  query: '{name}'
+  category: social
+- source: tgstat
+  level: extended
+  title_en: Telegram publication mentions
+  title_ru: Упоминания в публикациях Telegram
+  query: '"{name}"'
+  category: social
+- source: habr
+  level: extended
+  title_en: Habr author mentions
+  title_ru: Упоминания авторов на Хабре
+  query: '"{name}"'
+  category: social
+- source: pikabu
+  level: full
+  title_en: Pikabu mentions
+  title_ru: Упоминания на Пикабу
+  query: '"{name}"'
+  category: social
+- source: rutube
+  level: full
+  title_en: RUTUBE mentions
+  title_ru: Упоминания на RUTUBE
+  query: '"{name}"'
+  category: social
+- source: rusprofile
+  level: extended
+  title_en: Russian company leadership records
+  title_ru: Руководители российских компаний
+  query: '{name}'
+  category: records
+- source: checko
+  level: extended
+  title_en: Russian company affiliations
+  title_ru: Связи с российскими компаниями
+  query: '{name}'
+  category: records
+- source: youcontrol
+  level: full
+  title_en: Ukrainian company affiliations
+  title_ru: Связи с украинскими компаниями
+  query: '{name}'
+  category: records
+- source: adata_kz
+  level: full
+  title_en: Kazakhstan company affiliations
+  title_ru: Связи с компаниями Казахстана
+  query: '{name}'
+  category: records
+- source: orginfo_uz
+  level: full
+  title_en: Uzbekistan company affiliations
+  title_ru: Связи с компаниями Узбекистана
+  query: '{name}'
+  category: records
+- source: egr_by
+  level: full
+  title_en: Belarus company registry search
+  title_ru: Поиск в ЕГР Беларуси
+  query: '{name}'
+  category: records
+- source: yandex
+  level: extended
+  title_en: Leadership and founder roles
+  title_ru: Руководитель и учредитель
+  query: '"{name}" (директор | руководитель | учредитель | предприниматель | ИП)'
+  category: records
+- source: yandex
+  level: extended
+  title_en: CIS social profiles
+  title_ru: Профили в соцсетях СНГ
+  query: '"{name}" (site:vk.com | site:ok.ru | site:t.me)'
+  category: social
+- source: yandex
+  level: full
+  title_en: Public Russian-language documents
+  title_ru: Документы на русском языке
+  query: '"{name}" (приказ | протокол | список | отчёт) mime:pdf'
+  category: documents
+- source: qwant
+  level: extended
+  title_en: Exact full name in Qwant
+  title_ru: Точное полное имя в Qwant
+  query: '"{name}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Exact full name in Mojeek
+  title_ru: Точное полное имя в Mojeek
+  query: '"{name}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Exact full name in Ecosia
+  title_ru: Точное полное имя в Ecosia
+  query: '"{name}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Exact full name in Yahoo
+  title_ru: Точное полное имя в Yahoo
+  query: '"{name}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Exact full name in Yandex
+  title_ru: Точное имя в Яндексе
+  query: '"{name}"'
+  category: identity
+- source: yandex
+  level: extended
+  title_en: Russian-language biography
+  title_ru: Русскоязычная биография
+  query: '"{name}" (биография | резюме | контакты)'
+  category: identity
+- source: yandex
+  level: extended
+  title_en: Full name in PDF files
+  title_ru: Полное имя в PDF-файлах
+  query: '"{name}" mime:pdf'
+  category: documents
+- source: yandex
+  level: full
+  title_en: Full name on CIS social platforms
+  title_ru: Имя в социальных сетях СНГ
+  query: '"{name}" (site:vk.com | site:ok.ru | site:t.me)'
+  category: social
+- source: google_news
+  level: extended
+  title_en: Google News mentions
+  title_ru: Упоминания в Google News
+  query: '"{name}"'
+  category: news
+- source: bing_news
+  level: extended
+  title_en: Bing News mentions
+  title_ru: Упоминания в Bing News
+  query: '"{name}"'
+  category: news
+- source: yandex_news
+  level: basic
+  title_en: Yandex News mentions
+  title_ru: Упоминания в Яндекс Новостях
+  query: '"{name}"'
+  category: news
+- source: gdelt
+  level: full
+  title_en: Global news coverage
+  title_ru: Мировые новостные упоминания
+  query: '"{name}"'
+  category: news
+- source: linkedin
+  level: basic
+  title_en: LinkedIn people search
+  title_ru: Поиск людей в LinkedIn
+  query: '"{name}"'
+  category: career
+- source: facebook
+  level: extended
+  title_en: Facebook people search
+  title_ru: Поиск людей в Facebook
+  query: '"{name}"'
+  category: social
+- source: bluesky
+  level: extended
+  title_en: Bluesky mentions
+  title_ru: Упоминания в Bluesky
+  query: '"{name}"'
+  category: social
+- source: tiktok
+  level: full
+  title_en: TikTok mentions
+  title_ru: Упоминания в TikTok
+  query: '"{name}"'
+  category: social
+- source: twitch
+  level: full
+  title_en: Twitch mentions
+  title_ru: Упоминания в Twitch
+  query: '"{name}"'
+  category: social
+- source: flickr
+  level: full
+  title_en: Flickr photo mentions
+  title_ru: Упоминания в фотографиях Flickr
+  query: '"{name}"'
+  category: images
+- source: soundcloud
+  level: full
+  title_en: SoundCloud mentions
+  title_ru: Упоминания в SoundCloud
+  query: '"{name}"'
+  category: social
+- source: pinterest
+  level: full
+  title_en: Pinterest mentions
+  title_ru: Упоминания в Pinterest
+  query: '"{name}"'
+  category: images
+- source: steam
+  level: full
+  title_en: Steam Community users
+  title_ru: Пользователи Steam Community
+  query: '{name}'
+  category: social
+- source: pubmed
+  level: extended
+  title_en: PubMed author search
+  title_ru: Поиск автора в PubMed
+  query: '"{name}"'
+  category: publications
+- source: arxiv
+  level: extended
+  title_en: arXiv author mentions
+  title_ru: Упоминания автора в arXiv
+  query: '"{name}"'
+  category: publications
+- source: semantic_scholar
+  level: extended
+  title_en: Semantic Scholar author search
+  title_ru: Поиск автора в Semantic Scholar
+  query: '"{name}"'
+  category: publications
+- source: worldcat
+  level: full
+  title_en: WorldCat author search
+  title_ru: Поиск автора в WorldCat
+  query: '"{name}"'
+  category: publications
+- source: viaf
+  level: full
+  title_en: VIAF authority records
+  title_ru: Авторитетные записи VIAF
+  query: local.names all "{name}"
+  category: registries
+- source: arquivo_pt
+  level: full
+  title_en: Archived name mentions
+  title_ru: Архивные упоминания имени
+  query: '"{name}"'
+  category: archives
+- source: wikimedia_commons
+  level: full
+  title_en: Wikimedia Commons media
+  title_ru: Медиафайлы Wikimedia Commons
+  query: '"{name}"'
+  category: images
+- source: rambler
+  level: extended
+  title_en: Full name in Rambler
+  title_ru: Полное имя в Rambler
+  query: '"{name}"'
+  category: general
+- source: yandex_video
+  level: full
+  title_en: Person in Yandex Video
+  title_ru: Человек в Яндекс Видео
+  query: '"{name}"'
+  category: social

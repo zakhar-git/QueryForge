@@ -1,0 +1,52 @@
+entity: domain
+queries:
+  - source: google
+    level: basic
+    title: Indexed pages
+    category: web
+    query: 'site:{domain}'
+  - source: google
+    level: basic
+    title: Domain mentions outside itself
+    category: references
+    query: '"{domain}" -site:{domain}'
+  - source: google
+    level: advanced
+    title: Public documents on domain
+    category: documents
+    query: 'site:{domain} (filetype:pdf OR filetype:docx OR filetype:xlsx)'
+  - source: google
+    level: deep
+    title: Historical and ownership mentions
+    category: history
+    query: '"{domain}" ("founded" OR "acquired" OR "owned by" OR "formerly")'
+  - source: bing
+    level: basic
+    title: Indexed pages
+    category: web
+    query: 'site:{domain}'
+  - source: duckduckgo
+    level: basic
+    title: Domain mentions
+    category: references
+    query: '"{domain}"'
+  - source: github
+    level: basic
+    title: Domain in public repositories
+    category: code
+    query: '"{domain}"'
+  - source: github
+    level: advanced
+    title: Domain in configuration
+    category: code
+    query: '"{domain}" (path:config OR path:docs OR path:.github)'
+  - source: reddit
+    level: basic
+    title: Domain discussions
+    category: social
+    query: '"{domain}"'
+  - source: wayback
+    level: basic
+    title: Full archive history
+    category: archive
+    query: 'https://web.archive.org/web/*/{domain}/*'

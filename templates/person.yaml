@@ -1,0 +1,47 @@
+entity: person
+queries:
+  - source: google
+    level: basic
+    title: Exact full name
+    category: identity
+    query: '"{name}"'
+  - source: google
+    level: basic
+    title: Professional profile
+    category: career
+    query: '"{name}" (site:linkedin.com/in OR site:github.com OR site:orcid.org)'
+  - source: google
+    level: advanced
+    title: Full name in documents
+    category: documents
+    query: '"{name}" (filetype:pdf OR filetype:docx OR filetype:pptx)'
+  - source: google
+    level: deep
+    title: Full name with biography clues
+    category: identity
+    query: '"{name}" ("bio" OR "about" OR "speaker" OR "author")'
+  - source: bing
+    level: basic
+    title: Exact full name
+    category: identity
+    query: '"{name}"'
+  - source: duckduckgo
+    level: basic
+    title: Exact full name
+    category: identity
+    query: '"{name}"'
+  - source: github
+    level: advanced
+    title: Full name in repositories
+    category: code
+    query: '"{name}"'
+  - source: reddit
+    level: advanced
+    title: Full name mentions
+    category: social
+    query: '"{name}"'
+  - source: wayback
+    level: deep
+    title: Archived pages mentioning full name
+    category: archive
+    query: 'https://web.archive.org/web/*/https://www.google.com/search?q=%22{name}%22'

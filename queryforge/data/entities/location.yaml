@@ -1,0 +1,260 @@
+id: location
+label_en: Location or address
+label_ru: Место или адрес
+example_en: Berlin Alexanderplatz
+example_ru: Москва, Красная площадь
+category: location
+recommended_sources:
+- google_maps
+- openstreetmap
+- google
+- google_images
+- yandex
+- bing_maps
+queries:
+- source: google
+  level: basic
+  title_en: Exact place name
+  title_ru: Точное название места
+  query: '"{location}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact place name
+  title_ru: Точное название места
+  query: '"{location}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact place name
+  title_ru: Точное название места
+  query: '"{location}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact place name
+  title_ru: Точное название места
+  query: '"{location}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact place name
+  title_ru: Точное название места
+  query: '"{location}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact place name
+  title_ru: Точное название места
+  query: '"{location}"'
+  category: general
+- source: google_maps
+  level: basic
+  title_en: Google Maps
+  title_ru: Google Карты
+  query: '{location}'
+  category: maps
+- source: openstreetmap
+  level: basic
+  title_en: OpenStreetMap
+  title_ru: OpenStreetMap
+  query: '{location}'
+  category: maps
+- source: google
+  level: basic
+  title_en: Address and contact pages
+  title_ru: Адреса и контакты
+  query: '"{location}" (address OR contact OR location)'
+  category: maps
+- source: google_images
+  level: basic
+  title_en: Place images
+  title_ru: Фотографии места
+  query: '"{location}"'
+  category: images
+- source: bing_images
+  level: extended
+  title_en: Place images
+  title_ru: Фотографии места
+  query: '"{location}"'
+  category: images
+- source: yandex_images
+  level: full
+  title_en: Place images
+  title_ru: Фотографии места
+  query: '"{location}"'
+  category: images
+- source: youtube
+  level: extended
+  title_en: Videos from the place
+  title_ru: Видео о месте
+  query: '"{location}"'
+  category: social
+- source: reddit
+  level: extended
+  title_en: Local discussions
+  title_ru: Местные обсуждения
+  query: '"{location}"'
+  category: social
+- source: google
+  level: full
+  title_en: Public documents
+  title_ru: Публичные документы
+  query: '"{location}" (filetype:pdf OR filetype:docx)'
+  category: documents
+- source: yandex_maps
+  level: basic
+  title_en: Yandex Maps search
+  title_ru: Поиск на Яндекс Картах
+  query: '{location}'
+  category: maps
+- source: two_gis
+  level: basic
+  title_en: 2GIS directory search
+  title_ru: Поиск в справочнике 2ГИС
+  query: '{location}'
+  category: maps
+- source: vk
+  level: extended
+  title_en: VK location mentions
+  title_ru: Упоминания места во ВКонтакте
+  query: '"{location}"'
+  category: social
+- source: tgstat
+  level: extended
+  title_en: Telegram location mentions
+  title_ru: Упоминания места в Telegram
+  query: '"{location}"'
+  category: social
+- source: rutube
+  level: full
+  title_en: Location in videos
+  title_ru: Упоминания места в видео
+  query: '"{location}"'
+  category: social
+- source: pikabu
+  level: full
+  title_en: Location discussions
+  title_ru: Обсуждения места на Пикабу
+  query: '"{location}"'
+  category: social
+- source: rusprofile
+  level: full
+  title_en: Russian organizations at address
+  title_ru: Российские организации по адресу
+  query: '{location}'
+  category: records
+- source: checko
+  level: full
+  title_en: Russian counterparties at address
+  title_ru: Российские контрагенты по адресу
+  query: '{location}'
+  category: records
+- source: youcontrol
+  level: full
+  title_en: Ukrainian organizations at address
+  title_ru: Украинские организации по адресу
+  query: '{location}'
+  category: records
+- source: adata_kz
+  level: full
+  title_en: Kazakhstan organizations at address
+  title_ru: Организации Казахстана по адресу
+  query: '{location}'
+  category: records
+- source: orginfo_uz
+  level: full
+  title_en: Uzbekistan organizations at address
+  title_ru: Организации Узбекистана по адресу
+  query: '{location}'
+  category: records
+- source: qwant
+  level: extended
+  title_en: Location name in Qwant
+  title_ru: Название места в Qwant
+  query: '"{location}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Location name in Mojeek
+  title_ru: Название места в Mojeek
+  query: '"{location}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Location name in Ecosia
+  title_ru: Название места в Ecosia
+  query: '"{location}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Location name in Yahoo
+  title_ru: Название места в Yahoo
+  query: '"{location}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Location in Yandex
+  title_ru: Место в Яндексе
+  query: '"{location}"'
+  category: maps
+- source: yandex_news
+  level: extended
+  title_en: Location in regional news
+  title_ru: Место в региональных новостях
+  query: '"{location}"'
+  category: news
+- source: google_news
+  level: full
+  title_en: Location in Google News
+  title_ru: Место в Google News
+  query: '"{location}"'
+  category: news
+- source: bing_news
+  level: full
+  title_en: Location in Bing News
+  title_ru: Место в Bing News
+  query: '"{location}"'
+  category: news
+- source: gdelt
+  level: full
+  title_en: Global location coverage
+  title_ru: Мировые упоминания места
+  query: '"{location}"'
+  category: news
+- source: bing_maps
+  level: basic
+  title_en: Bing Maps search
+  title_ru: Поиск в Bing Maps
+  query: '{location}'
+  category: maps
+- source: wikimedia_commons
+  level: full
+  title_en: Location media in Wikimedia Commons
+  title_ru: Медиа места в Wikimedia Commons
+  query: '"{location}"'
+  category: images
+- source: flickr
+  level: full
+  title_en: Location photos in Flickr
+  title_ru: Фотографии места во Flickr
+  query: '"{location}"'
+  category: images
+- source: pinterest
+  level: full
+  title_en: Location media in Pinterest
+  title_ru: Материалы о месте в Pinterest
+  query: '"{location}"'
+  category: images
+- source: rambler
+  level: extended
+  title_en: Location in Rambler
+  title_ru: Место в Rambler
+  query: '"{location}"'
+  category: general
+- source: yandex_video
+  level: full
+  title_en: Location in Yandex Video
+  title_ru: Место в Яндекс Видео
+  query: '"{location}"'
+  category: social

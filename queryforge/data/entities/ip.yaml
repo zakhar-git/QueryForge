@@ -1,0 +1,162 @@
+id: ip
+label_en: IP address
+label_ru: IP-адрес
+example_en: 8.8.8.8
+example_ru: 8.8.8.8
+category: technical
+recommended_sources:
+- shodan
+- censys
+- urlscan
+- virustotal
+- abuseipdb
+- bgpview
+- google
+- rdap
+- ipinfo
+queries:
+- source: google
+  level: basic
+  title_en: Exact IP address
+  title_ru: Точный IP-адрес
+  query: '"{ip}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact IP address
+  title_ru: Точный IP-адрес
+  query: '"{ip}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact IP address
+  title_ru: Точный IP-адрес
+  query: '"{ip}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact IP address
+  title_ru: Точный IP-адрес
+  query: '"{ip}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact IP address
+  title_ru: Точный IP-адрес
+  query: '"{ip}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact IP address
+  title_ru: Точный IP-адрес
+  query: '"{ip}"'
+  category: general
+- source: shodan
+  level: basic
+  title_en: Shodan host
+  title_ru: Хост в Shodan
+  query: '{ip}'
+  category: technical
+- source: censys
+  level: basic
+  title_en: Censys host
+  title_ru: Хост в Censys
+  query: '{ip}'
+  category: technical
+- source: urlscan
+  level: basic
+  title_en: urlscan results
+  title_ru: Результаты urlscan
+  query: ip:{ip}
+  category: technical
+- source: virustotal
+  level: basic
+  title_en: VirusTotal IP
+  title_ru: IP в VirusTotal
+  query: '{ip}'
+  category: technical
+- source: abuseipdb
+  level: basic
+  title_en: AbuseIPDB record
+  title_ru: Запись AbuseIPDB
+  query: '{ip}'
+  category: technical
+- source: bgpview
+  level: extended
+  title_en: Network and ASN
+  title_ru: Сеть и ASN
+  query: '{ip}'
+  category: technical
+- source: otx
+  level: extended
+  title_en: OTX indicators
+  title_ru: Индикаторы OTX
+  query: '{ip}'
+  category: technical
+- source: google
+  level: extended
+  title_en: Public documents
+  title_ru: Публичные документы
+  query: '"{ip}" (filetype:pdf OR filetype:txt OR filetype:csv)'
+  category: documents
+- source: github
+  level: extended
+  title_en: Code references
+  title_ru: Упоминания в коде
+  query: '"{ip}"'
+  category: code
+- source: reddit
+  level: full
+  title_en: Reddit mentions
+  title_ru: Упоминания на Reddit
+  query: '"{ip}"'
+  category: social
+- source: rdap
+  level: basic
+  title_en: RDAP IP record
+  title_ru: RDAP-запись IP
+  query: '{ip}'
+  category: technical
+  url: https://client.rdap.org/?object={ip}&type=ip
+- source: ipinfo
+  level: basic
+  title_en: IPinfo record
+  title_ru: Запись IPinfo
+  query: '{ip}'
+  category: technical
+- source: bgp_he
+  level: extended
+  title_en: BGP Toolkit IP lookup
+  title_ru: Поиск IP в BGP Toolkit
+  query: '{ip}'
+  category: technical
+- source: robtex
+  level: extended
+  title_en: Robtex IP relations
+  title_ru: Связи IP в Robtex
+  query: '{ip}'
+  category: technical
+- source: greynoise
+  level: extended
+  title_en: GreyNoise IP context
+  title_ru: Контекст IP в GreyNoise
+  query: '{ip}'
+  category: technical
+- source: pulsedive
+  level: extended
+  title_en: Pulsedive IP indicator
+  title_ru: Индикатор IP в Pulsedive
+  query: '{ip}'
+  category: technical
+- source: threatfox
+  level: full
+  title_en: ThreatFox IP indicator
+  title_ru: Индикатор IP в ThreatFox
+  query: ioc:{ip}
+  category: technical
+- source: urlhaus
+  level: full
+  title_en: URLhaus IP search
+  title_ru: Поиск IP в URLhaus
+  query: '{ip}'
+  category: technical

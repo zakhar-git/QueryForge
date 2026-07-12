@@ -1,0 +1,106 @@
+id: asn
+label_en: ASN
+label_ru: Автономная система
+example_en: AS15169
+example_ru: AS15169
+category: technical
+recommended_sources:
+- bgpview
+- peeringdb
+- google
+- shodan
+- censys
+- rdap
+- bgp_he
+queries:
+- source: google
+  level: basic
+  title_en: Exact ASN
+  title_ru: Точный ASN
+  query: '"{asn}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact ASN
+  title_ru: Точный ASN
+  query: '"{asn}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact ASN
+  title_ru: Точный ASN
+  query: '"{asn}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact ASN
+  title_ru: Точный ASN
+  query: '"{asn}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact ASN
+  title_ru: Точный ASN
+  query: '"{asn}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact ASN
+  title_ru: Точный ASN
+  query: '"{asn}"'
+  category: general
+- source: bgpview
+  level: basic
+  title_en: BGPView record
+  title_ru: Запись BGPView
+  query: '{asn}'
+  category: technical
+- source: peeringdb
+  level: basic
+  title_en: PeeringDB record
+  title_ru: Запись PeeringDB
+  query: '{asn}'
+  category: technical
+- source: shodan
+  level: extended
+  title_en: Shodan ASN
+  title_ru: ASN в Shodan
+  query: asn:{asn}
+  category: technical
+- source: censys
+  level: extended
+  title_en: Censys ASN
+  title_ru: ASN в Censys
+  query: 'autonomous_system.asn: {asn_number}'
+  category: technical
+- source: google
+  level: extended
+  title_en: Routing documents
+  title_ru: Документы о маршрутизации
+  query: '"{asn}" (BGP OR peering OR routing)'
+  category: documents
+- source: github
+  level: full
+  title_en: Code and configuration mentions
+  title_ru: Упоминания в коде и конфигурациях
+  query: '"{asn}"'
+  category: code
+- source: rdap
+  level: basic
+  title_en: RDAP autonomous system record
+  title_ru: RDAP-запись автономной системы
+  query: '{asn_number}'
+  category: technical
+  url: https://client.rdap.org/?object={asn_number}&type=autnum
+- source: bgp_he
+  level: basic
+  title_en: BGP Toolkit ASN record
+  title_ru: Запись ASN в BGP Toolkit
+  query: '{asn}'
+  category: technical
+- source: pulsedive
+  level: full
+  title_en: Pulsedive ASN mentions
+  title_ru: Упоминания ASN в Pulsedive
+  query: '{asn}'
+  category: technical

@@ -1,0 +1,140 @@
+id: crypto_address
+label_en: Crypto address
+label_ru: Криптовалютный адрес
+example_en: 0x...
+example_ru: 0x...
+category: blockchain
+recommended_sources:
+- google
+- etherscan
+- blockchair
+- github
+- reddit
+- blockchain_com
+queries:
+- source: google
+  level: basic
+  title_en: Exact address
+  title_ru: Точный адрес
+  query: '"{crypto}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact address
+  title_ru: Точный адрес
+  query: '"{crypto}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact address
+  title_ru: Точный адрес
+  query: '"{crypto}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact address
+  title_ru: Точный адрес
+  query: '"{crypto}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact address
+  title_ru: Точный адрес
+  query: '"{crypto}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact address
+  title_ru: Точный адрес
+  query: '"{crypto}"'
+  category: general
+- source: etherscan
+  level: basic
+  title_en: Etherscan
+  title_ru: Etherscan
+  query: '{crypto}'
+  category: blockchain
+- source: blockchair
+  level: basic
+  title_en: Blockchair
+  title_ru: Blockchair
+  query: '{crypto}'
+  category: blockchain
+- source: solscan
+  level: extended
+  title_en: Solscan
+  title_ru: Solscan
+  query: '{crypto}'
+  category: blockchain
+- source: tronscan
+  level: extended
+  title_en: Tronscan
+  title_ru: Tronscan
+  query: '{crypto}'
+  category: blockchain
+- source: tonviewer
+  level: extended
+  title_en: Tonviewer
+  title_ru: Tonviewer
+  query: '{crypto}'
+  category: blockchain
+- source: github
+  level: extended
+  title_en: Code mentions
+  title_ru: Упоминания в коде
+  query: '"{crypto}"'
+  category: code
+- source: reddit
+  level: extended
+  title_en: Reddit mentions
+  title_ru: Упоминания на Reddit
+  query: '"{crypto}"'
+  category: social
+- source: google
+  level: full
+  title_en: Telegram mentions
+  title_ru: Упоминания в Telegram
+  query: '"{crypto}" site:t.me'
+  category: social
+- source: otx
+  level: full
+  title_en: OTX indicators
+  title_ru: Индикаторы OTX
+  query: '{crypto}'
+  category: technical
+- source: blockchain_com
+  level: basic
+  title_en: Blockchain.com search
+  title_ru: Поиск в Blockchain.com
+  query: '{crypto}'
+  category: blockchain
+- source: bscscan
+  level: extended
+  title_en: BNB Smart Chain search
+  title_ru: Поиск в BNB Smart Chain
+  query: '{crypto}'
+  category: blockchain
+- source: polygonscan
+  level: extended
+  title_en: Polygon search
+  title_ru: Поиск в Polygon
+  query: '{crypto}'
+  category: blockchain
+- source: arbiscan
+  level: extended
+  title_en: Arbitrum search
+  title_ru: Поиск в Arbitrum
+  query: '{crypto}'
+  category: blockchain
+- source: basescan
+  level: extended
+  title_en: Base search
+  title_ru: Поиск в Base
+  query: '{crypto}'
+  category: blockchain
+- source: pulsedive
+  level: full
+  title_en: Pulsedive address mentions
+  title_ru: Упоминания адреса в Pulsedive
+  query: '{crypto}'
+  category: technical

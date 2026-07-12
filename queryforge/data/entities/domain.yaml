@@ -1,0 +1,321 @@
+id: domain
+label_en: Domain or website
+label_ru: Домен или сайт
+example_en: example.com
+example_ru: example.com
+category: technical
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- wayback
+- crtsh
+- urlscan
+- icann
+- github
+- yandex
+- rdap
+queries:
+- source: google
+  level: basic
+  title_en: Indexed pages
+  title_ru: Проиндексированные страницы
+  query: site:{domain}
+  category: web
+- source: google
+  level: basic
+  title_en: External mentions
+  title_ru: Внешние упоминания
+  query: '"{domain}" -site:{domain}'
+  category: references
+- source: bing
+  level: basic
+  title_en: Indexed pages
+  title_ru: Проиндексированные страницы
+  query: site:{domain}
+  category: web
+- source: duckduckgo
+  level: basic
+  title_en: Domain mentions
+  title_ru: Упоминания домена
+  query: '"{domain}"'
+  category: references
+- source: yandex
+  level: extended
+  title_en: Indexed pages
+  title_ru: Проиндексированные страницы
+  query: site:{domain}
+  category: web
+- source: brave
+  level: extended
+  title_en: Domain mentions
+  title_ru: Упоминания домена
+  query: '"{domain}"'
+  category: references
+- source: startpage
+  level: full
+  title_en: Domain mentions
+  title_ru: Упоминания домена
+  query: '"{domain}"'
+  category: references
+- source: google
+  level: extended
+  title_en: Public documents
+  title_ru: Публичные документы
+  query: site:{domain} (filetype:pdf OR filetype:docx OR filetype:xlsx OR filetype:pptx)
+  category: documents
+- source: google
+  level: extended
+  title_en: Social references
+  title_ru: Упоминания в соцсетях
+  query: '"{domain}" (site:reddit.com OR site:t.me OR site:youtube.com)'
+  category: social
+- source: github
+  level: basic
+  title_en: Code references
+  title_ru: Упоминания в коде
+  query: '"{domain}"'
+  category: code
+- source: gitlab
+  level: extended
+  title_en: GitLab references
+  title_ru: Упоминания в GitLab
+  query: '"{domain}"'
+  category: code
+- source: sourcegraph
+  level: full
+  title_en: Public code index
+  title_ru: Публичный индекс кода
+  query: context:global "{domain}"
+  category: code
+- source: wayback
+  level: basic
+  title_en: Archive history
+  title_ru: История в архиве
+  query: '{domain}/*'
+  category: archives
+  url: https://web.archive.org/web/*/{domain}/*
+- source: archive_today
+  level: extended
+  title_en: Archive.today snapshots
+  title_ru: Снимки Archive.today
+  query: '{domain}'
+  category: archives
+  url: https://archive.ph/{domain}
+- source: crtsh
+  level: basic
+  title_en: Certificate records
+  title_ru: Записи сертификатов
+  query: '%.{domain}'
+  category: technical
+- source: urlscan
+  level: basic
+  title_en: urlscan results
+  title_ru: Результаты urlscan
+  query: domain:{domain}
+  category: technical
+- source: virustotal
+  level: extended
+  title_en: VirusTotal domain
+  title_ru: Домен в VirusTotal
+  query: '{domain}'
+  category: technical
+- source: shodan
+  level: extended
+  title_en: Shodan hostname
+  title_ru: Имя хоста в Shodan
+  query: hostname:"{domain}"
+  category: technical
+- source: censys
+  level: full
+  title_en: Censys services
+  title_ru: Сервисы в Censys
+  query: 'dns.names: {domain}'
+  category: technical
+- source: icann
+  level: basic
+  title_en: Registration lookup
+  title_ru: Регистрационные данные
+  query: '{domain}'
+  category: technical
+- source: google_images
+  level: full
+  title_en: Domain images
+  title_ru: Изображения домена
+  query: site:{domain}
+  category: images
+- source: tgstat
+  level: extended
+  title_en: Telegram publication references
+  title_ru: Упоминания в Telegram
+  query: '"{domain}"'
+  category: references
+- source: vk
+  level: extended
+  title_en: VK references
+  title_ru: Упоминания во ВКонтакте
+  query: '"{domain}"'
+  category: references
+- source: habr
+  level: extended
+  title_en: Habr references
+  title_ru: Упоминания на Хабре
+  query: '"{domain}"'
+  category: references
+- source: pikabu
+  level: full
+  title_en: Pikabu references
+  title_ru: Упоминания на Пикабу
+  query: '"{domain}"'
+  category: references
+- source: rutube
+  level: full
+  title_en: RUTUBE references
+  title_ru: Упоминания на RUTUBE
+  query: '"{domain}"'
+  category: references
+- source: rusprofile
+  level: full
+  title_en: Russian company website records
+  title_ru: Сайт в данных российских компаний
+  query: '{domain}'
+  category: records
+- source: checko
+  level: full
+  title_en: Russian counterparty website records
+  title_ru: Сайт в данных российских контрагентов
+  query: '{domain}'
+  category: records
+- source: youcontrol
+  level: full
+  title_en: Ukrainian company website records
+  title_ru: Сайт в данных украинских компаний
+  query: '{domain}'
+  category: records
+- source: adata_kz
+  level: full
+  title_en: Kazakhstan company website records
+  title_ru: Сайт в данных компаний Казахстана
+  query: '{domain}'
+  category: records
+- source: orginfo_uz
+  level: full
+  title_en: Uzbekistan company website records
+  title_ru: Сайт в данных компаний Узбекистана
+  query: '{domain}'
+  category: records
+- source: yandex
+  level: extended
+  title_en: Russian-language references outside domain
+  title_ru: Русскоязычные упоминания вне сайта
+  query: '"{domain}" -site:{domain} lang:ru'
+  category: references
+- source: qwant
+  level: extended
+  title_en: Domain mentions in Qwant
+  title_ru: Упоминания домена в Qwant
+  query: '"{domain}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Domain mentions in Mojeek
+  title_ru: Упоминания домена в Mojeek
+  query: '"{domain}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Domain mentions in Ecosia
+  title_ru: Упоминания домена в Ecosia
+  query: '"{domain}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Domain mentions in Yahoo
+  title_ru: Упоминания домена в Yahoo
+  query: '"{domain}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Indexed domain pages
+  title_ru: Проиндексированные страницы домена
+  query: site:{domain}
+  category: web
+- source: yandex
+  level: extended
+  title_en: Exact host pages
+  title_ru: Страницы точного хоста
+  query: host:{domain}
+  category: web
+- source: yandex
+  level: extended
+  title_en: Domain mentions outside the site
+  title_ru: Упоминания домена за пределами сайта
+  query: '"{domain}" -site:{domain}'
+  category: references
+- source: yandex
+  level: full
+  title_en: PDF files on domain
+  title_ru: PDF-файлы на домене
+  query: site:{domain} mime:pdf
+  category: documents
+- source: yandex_news
+  level: full
+  title_en: Domain mentions in news
+  title_ru: Упоминания домена в новостях
+  query: '"{domain}"'
+  category: news
+- source: rdap
+  level: basic
+  title_en: RDAP domain record
+  title_ru: RDAP-запись домена
+  query: '{domain}'
+  category: technical
+  url: https://client.rdap.org/?object={domain_q}&type=domain
+- source: robtex
+  level: extended
+  title_en: DNS relations in Robtex
+  title_ru: DNS-связи в Robtex
+  query: '{domain}'
+  category: technical
+- source: urlhaus
+  level: full
+  title_en: URLhaus domain search
+  title_ru: Поиск домена в URLhaus
+  query: '{domain}'
+  category: technical
+- source: pulsedive
+  level: full
+  title_en: Pulsedive domain indicator
+  title_ru: Индикатор домена в Pulsedive
+  query: '{domain}'
+  category: technical
+- source: arquivo_pt
+  level: basic
+  title_en: Arquivo.pt domain history
+  title_ru: История домена в Arquivo.pt
+  query: '{domain}'
+  category: archives
+- source: codeberg
+  level: full
+  title_en: Domain in Codeberg repositories
+  title_ru: Домен в репозиториях Codeberg
+  query: '"{domain}"'
+  category: code
+- source: gitflic
+  level: full
+  title_en: Domain in GitFlic repositories
+  title_ru: Домен в репозиториях GitFlic
+  query: '"{domain}"'
+  category: code
+- source: bitbucket
+  level: full
+  title_en: Domain in Bitbucket repositories
+  title_ru: Домен в репозиториях Bitbucket
+  query: '"{domain}"'
+  category: code
+- source: rambler
+  level: extended
+  title_en: Domain mentions in Rambler
+  title_ru: Упоминания домена в Rambler
+  query: '"{domain}"'
+  category: general

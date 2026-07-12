@@ -1,0 +1,297 @@
+id: phrase
+label_en: Phrase or keyword
+label_ru: Фраза или ключевое слово
+example_en: distinct public phrase
+example_ru: уникальная публичная фраза
+category: content
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- github
+- reddit
+- yandex
+- yandex_news
+queries:
+- source: google
+  level: basic
+  title_en: Exact phrase
+  title_ru: Точная фраза
+  query: '"{phrase}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact phrase
+  title_ru: Точная фраза
+  query: '"{phrase}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact phrase
+  title_ru: Точная фраза
+  query: '"{phrase}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact phrase
+  title_ru: Точная фраза
+  query: '"{phrase}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact phrase
+  title_ru: Точная фраза
+  query: '"{phrase}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact phrase
+  title_ru: Точная фраза
+  query: '"{phrase}"'
+  category: general
+- source: google
+  level: basic
+  title_en: Phrase excluding common copies
+  title_ru: Фраза без частых копий
+  query: '"{phrase}" -pinterest -facebook'
+  category: content
+- source: google
+  level: extended
+  title_en: Documents
+  title_ru: Документы
+  query: '"{phrase}" (filetype:pdf OR filetype:docx OR filetype:pptx)'
+  category: documents
+- source: github
+  level: basic
+  title_en: Code mentions
+  title_ru: Упоминания в коде
+  query: '"{phrase}"'
+  category: code
+- source: gitlab
+  level: extended
+  title_en: GitLab mentions
+  title_ru: Упоминания в GitLab
+  query: '"{phrase}"'
+  category: code
+- source: sourcegraph
+  level: full
+  title_en: Public code index
+  title_ru: Публичный индекс кода
+  query: context:global "{phrase}"
+  category: code
+- source: reddit
+  level: basic
+  title_en: Reddit mentions
+  title_ru: Упоминания на Reddit
+  query: '"{phrase}"'
+  category: social
+- source: youtube
+  level: extended
+  title_en: Video mentions
+  title_ru: Упоминания в видео
+  query: '"{phrase}"'
+  category: social
+- source: medium
+  level: extended
+  title_en: Article mentions
+  title_ru: Упоминания в статьях
+  query: '"{phrase}"'
+  category: social
+- source: internet_archive
+  level: full
+  title_en: Internet Archive items
+  title_ru: Материалы Internet Archive
+  query: '"{phrase}"'
+  category: archives
+- source: vk
+  level: extended
+  title_en: VK posts and mentions
+  title_ru: Публикации и упоминания во ВКонтакте
+  query: '"{phrase}"'
+  category: social
+- source: tgstat
+  level: basic
+  title_en: Telegram publication search
+  title_ru: Поиск по публикациям Telegram
+  query: '"{phrase}"'
+  category: social
+- source: rutube
+  level: extended
+  title_en: RUTUBE search
+  title_ru: Поиск на RUTUBE
+  query: '"{phrase}"'
+  category: social
+- source: habr
+  level: extended
+  title_en: Habr publication search
+  title_ru: Поиск публикаций на Хабре
+  query: '"{phrase}"'
+  category: content
+- source: pikabu
+  level: extended
+  title_en: Pikabu publication search
+  title_ru: Поиск публикаций на Пикабу
+  query: '"{phrase}"'
+  category: content
+- source: yandex
+  level: extended
+  title_en: CIS web exact phrase
+  title_ru: Точная фраза на сайтах СНГ
+  query: '"{phrase}" (domain:ru | domain:by | domain:kz | domain:uz | domain:ua)'
+  category: references
+- source: google
+  level: full
+  title_en: CIS social exact phrase
+  title_ru: Точная фраза в соцсетях СНГ
+  query: '"{phrase}" (site:vk.com OR site:t.me OR site:pikabu.ru OR site:habr.com)'
+  category: social
+- source: qwant
+  level: extended
+  title_en: Exact phrase in Qwant
+  title_ru: Точная фраза в Qwant
+  query: '"{phrase}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Exact phrase in Mojeek
+  title_ru: Точная фраза в Mojeek
+  query: '"{phrase}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Exact phrase in Ecosia
+  title_ru: Точная фраза в Ecosia
+  query: '"{phrase}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Exact phrase in Yahoo
+  title_ru: Точная фраза в Yahoo
+  query: '"{phrase}"'
+  category: general
+- source: yandex
+  level: basic
+  title_en: Exact phrase in Yandex
+  title_ru: Точная фраза в Яндексе
+  query: '"{phrase}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Russian-language phrase
+  title_ru: Русскоязычные упоминания фразы
+  query: '"{phrase}" lang:ru'
+  category: general
+- source: yandex
+  level: full
+  title_en: Phrase in PDF files
+  title_ru: Фраза в PDF-файлах
+  query: '"{phrase}" mime:pdf'
+  category: documents
+- source: google_news
+  level: extended
+  title_en: Phrase in Google News
+  title_ru: Фраза в Google News
+  query: '"{phrase}"'
+  category: news
+- source: bing_news
+  level: extended
+  title_en: Phrase in Bing News
+  title_ru: Фраза в Bing News
+  query: '"{phrase}"'
+  category: news
+- source: yandex_news
+  level: basic
+  title_en: Phrase in Yandex News
+  title_ru: Фраза в Яндекс Новостях
+  query: '"{phrase}"'
+  category: news
+- source: gdelt
+  level: full
+  title_en: Phrase in global news
+  title_ru: Фраза в мировых новостях
+  query: '"{phrase}"'
+  category: news
+- source: bluesky
+  level: full
+  title_en: Phrase in Bluesky
+  title_ru: Фраза в Bluesky
+  query: '"{phrase}"'
+  category: social
+- source: tiktok
+  level: full
+  title_en: Phrase in TikTok
+  title_ru: Фраза в TikTok
+  query: '"{phrase}"'
+  category: social
+- source: linkedin
+  level: full
+  title_en: Phrase in LinkedIn
+  title_ru: Фраза в LinkedIn
+  query: '"{phrase}"'
+  category: social
+- source: facebook
+  level: full
+  title_en: Phrase in Facebook
+  title_ru: Фраза в Facebook
+  query: '"{phrase}"'
+  category: social
+- source: codeberg
+  level: full
+  title_en: Phrase in Codeberg
+  title_ru: Фраза в Codeberg
+  query: '"{phrase}"'
+  category: code
+- source: gitflic
+  level: full
+  title_en: Phrase in GitFlic
+  title_ru: Фраза в GitFlic
+  query: '"{phrase}"'
+  category: code
+- source: bitbucket
+  level: full
+  title_en: Phrase in Bitbucket
+  title_ru: Фраза в Bitbucket
+  query: '"{phrase}"'
+  category: code
+- source: arquivo_pt
+  level: full
+  title_en: Archived phrase mentions
+  title_ru: Архивные упоминания фразы
+  query: '"{phrase}"'
+  category: archives
+- source: pubmed
+  level: full
+  title_en: Phrase in PubMed
+  title_ru: Фраза в PubMed
+  query: '"{phrase}"'
+  category: publications
+- source: arxiv
+  level: full
+  title_en: Phrase in arXiv
+  title_ru: Фраза в arXiv
+  query: '"{phrase}"'
+  category: publications
+- source: semantic_scholar
+  level: full
+  title_en: Phrase in Semantic Scholar
+  title_ru: Фраза в Semantic Scholar
+  query: '"{phrase}"'
+  category: publications
+- source: worldcat
+  level: full
+  title_en: Phrase in WorldCat
+  title_ru: Фраза в WorldCat
+  query: '"{phrase}"'
+  category: publications
+- source: rambler
+  level: extended
+  title_en: Exact phrase in Rambler
+  title_ru: Точная фраза в Rambler
+  query: '"{phrase}"'
+  category: general
+- source: yandex_video
+  level: full
+  title_en: Phrase in Yandex Video
+  title_ru: Фраза в Яндекс Видео
+  query: '"{phrase}"'
+  category: social

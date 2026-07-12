@@ -1,0 +1,47 @@
+entity: email
+queries:
+  - source: google
+    level: basic
+    title: Exact email
+    category: identity
+    query: '"{email}"'
+  - source: google
+    level: advanced
+    title: Email in documents
+    category: documents
+    query: '"{email}" (filetype:pdf OR filetype:xlsx OR filetype:docx)'
+  - source: google
+    level: deep
+    title: Local part and domain together
+    category: identity
+    query: '"{local}" "{domain}"'
+  - source: bing
+    level: basic
+    title: Exact email
+    category: identity
+    query: '"{email}"'
+  - source: duckduckgo
+    level: basic
+    title: Exact email
+    category: identity
+    query: '"{email}"'
+  - source: github
+    level: basic
+    title: Email in public code
+    category: code
+    query: '"{email}"'
+  - source: github
+    level: advanced
+    title: Email in commit or author metadata
+    category: code
+    query: '"{email}" ("author" OR "committer" OR "maintainer")'
+  - source: reddit
+    level: advanced
+    title: Email mention
+    category: social
+    query: '"{email}"'
+  - source: wayback
+    level: advanced
+    title: Archived pages containing domain
+    category: archive
+    query: 'https://web.archive.org/web/*/{domain}/*'

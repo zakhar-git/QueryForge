@@ -1,0 +1,201 @@
+id: telegram
+label_en: Telegram account or channel
+label_ru: Аккаунт или канал Telegram
+example_en: example_channel
+example_ru: example_channel
+category: social
+recommended_sources:
+- google
+- bing
+- duckduckgo
+- google_images
+- reddit
+- yandex
+queries:
+- source: google
+  level: basic
+  title_en: Exact Telegram name
+  title_ru: Точное имя Telegram
+  query: '"{telegram}"'
+  category: general
+- source: bing
+  level: basic
+  title_en: Exact Telegram name
+  title_ru: Точное имя Telegram
+  query: '"{telegram}"'
+  category: general
+- source: duckduckgo
+  level: basic
+  title_en: Exact Telegram name
+  title_ru: Точное имя Telegram
+  query: '"{telegram}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Exact Telegram name
+  title_ru: Точное имя Telegram
+  query: '"{telegram}"'
+  category: general
+- source: brave
+  level: extended
+  title_en: Exact Telegram name
+  title_ru: Точное имя Telegram
+  query: '"{telegram}"'
+  category: general
+- source: startpage
+  level: full
+  title_en: Exact Telegram name
+  title_ru: Точное имя Telegram
+  query: '"{telegram}"'
+  category: general
+- source: google
+  level: basic
+  title_en: Telegram pages
+  title_ru: Страницы Telegram
+  query: site:t.me "{telegram}"
+  category: social
+- source: bing
+  level: basic
+  title_en: Telegram pages
+  title_ru: Страницы Telegram
+  query: site:t.me "{telegram}"
+  category: social
+- source: duckduckgo
+  level: extended
+  title_en: Telegram pages
+  title_ru: Страницы Telegram
+  query: site:t.me "{telegram}"
+  category: social
+- source: google
+  level: extended
+  title_en: Mentions outside Telegram
+  title_ru: Упоминания вне Telegram
+  query: '"t.me/{telegram}" -site:t.me'
+  category: references
+- source: google_images
+  level: extended
+  title_en: Images and avatars
+  title_ru: Изображения и аватары
+  query: '"{telegram}" telegram'
+  category: images
+- source: reddit
+  level: extended
+  title_en: Reddit mentions
+  title_ru: Упоминания на Reddit
+  query: '"{telegram}" telegram'
+  category: social
+- source: github
+  level: full
+  title_en: Code mentions
+  title_ru: Упоминания в коде
+  query: '"t.me/{telegram}"'
+  category: code
+- source: wayback
+  level: full
+  title_en: Archived Telegram page
+  title_ru: Страница Telegram в архиве
+  query: t.me/{telegram}
+  category: archives
+  url: https://web.archive.org/web/*/https://t.me/{telegram}
+- source: tgstat
+  level: basic
+  title_en: Channel and publication search
+  title_ru: Поиск канала и публикаций
+  query: '"{telegram}"'
+  category: social
+- source: vk
+  level: extended
+  title_en: VK cross-references
+  title_ru: Перекрёстные упоминания во ВКонтакте
+  query: '"{telegram}"'
+  category: social
+- source: habr
+  level: extended
+  title_en: Habr cross-references
+  title_ru: Перекрёстные упоминания на Хабре
+  query: '"{telegram}"'
+  category: social
+- source: pikabu
+  level: extended
+  title_en: Pikabu cross-references
+  title_ru: Перекрёстные упоминания на Пикабу
+  query: '"{telegram}"'
+  category: social
+- source: rutube
+  level: full
+  title_en: Video references
+  title_ru: Упоминания в видео
+  query: '"{telegram}"'
+  category: social
+- source: yandex
+  level: basic
+  title_en: Telegram pages
+  title_ru: Страницы Telegram
+  query: site:t.me "{telegram}"
+  category: social
+- source: yandex
+  level: extended
+  title_en: Invitation and contact links
+  title_ru: Приглашения и контактные ссылки
+  query: ("t.me/{telegram}" | "@{telegram}")
+  category: social
+- source: google
+  level: extended
+  title_en: CIS web references
+  title_ru: Упоминания в русскоязычном интернете
+  query: ("t.me/{telegram}" OR "@{telegram}") (site:.ru OR site:.by OR site:.kz OR site:.uz OR site:.ua)
+  category: references
+- source: qwant
+  level: extended
+  title_en: Telegram identifier in Qwant
+  title_ru: Идентификатор Telegram в Qwant
+  query: '"{telegram}"'
+  category: general
+- source: mojeek
+  level: extended
+  title_en: Telegram identifier in Mojeek
+  title_ru: Идентификатор Telegram в Mojeek
+  query: '"{telegram}"'
+  category: general
+- source: ecosia
+  level: extended
+  title_en: Telegram identifier in Ecosia
+  title_ru: Идентификатор Telegram в Ecosia
+  query: '"{telegram}"'
+  category: general
+- source: yahoo
+  level: extended
+  title_en: Telegram identifier in Yahoo
+  title_ru: Идентификатор Telegram в Yahoo
+  query: '"{telegram}"'
+  category: general
+- source: yandex
+  level: extended
+  title_en: Telegram mentions in Russian
+  title_ru: Русскоязычные упоминания Telegram
+  query: '"@{telegram}" lang:ru'
+  category: social
+- source: yandex_news
+  level: full
+  title_en: Telegram identifier in news
+  title_ru: Идентификатор Telegram в новостях
+  query: '"{telegram}"'
+  category: news
+- source: arquivo_pt
+  level: full
+  title_en: Archived Telegram pages
+  title_ru: Архивные страницы Telegram
+  query: t.me/{telegram}
+  category: archives
+- source: bluesky
+  level: full
+  title_en: Telegram identifier on Bluesky
+  title_ru: Идентификатор Telegram в Bluesky
+  query: '"@{telegram}"'
+  category: social
+- source: rambler
+  level: extended
+  title_en: Telegram identifier in Rambler
+  title_ru: Идентификатор Telegram в Rambler
+  query: '"{telegram}"'
+  category: general
